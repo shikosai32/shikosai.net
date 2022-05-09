@@ -1,8 +1,9 @@
-import type { FC } from "react";
+import { FC } from "react";
+import HanbergerMenu from "components/HanbergerMemu";
 
 const Header: FC = () => (
-  <div>
-    <p>Header</p>
+  <div className="w-screen sticky top-0 flex justify-center">
+    <HanbergerMenu />
   </div>
 );
 
