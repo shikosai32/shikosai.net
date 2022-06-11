@@ -78,7 +78,7 @@ const Layout: FC<Props> = ({
     <main>
       <div>
         <Header />
-        <div className="min-h-[calc(100vh_-_5rem)] mt-20">
+        <div className="mt-20 min-h-[calc(100vh_-_5rem)]">
           <BackContent Contents={BackContents} />
           <Side>{children}</Side>
         </div>

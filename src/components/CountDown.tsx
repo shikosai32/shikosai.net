@@ -10,8 +10,8 @@ const Time: FC = () => {
     setTime(shikosaiTime.diff(moment()));
   }, 1000);
   return (
-    <div className=" flex flex-col justify-center items-center">
-      <span className="text-4xl underline underline-offset-8 decoration-2 hidden md:block">
+    <div className="flex flex-col items-center justify-center">
+      <span className="hidden text-4xl underline decoration-2 underline-offset-8 md:block">
         {dura.months()}months | {dura.days()}days | {dura.hours()}hours | {dura.minutes()}minutes | {dura.seconds()}
         seconds
       </span>

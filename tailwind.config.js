@@ -9,7 +9,7 @@ module.exports = {
       },
       keyframes: {
         display: {
-          from:  {opacity: 0},
+          from: {opacity: 0},
           to: {opacity: 1}
         },
         hide: {

@@ -25,9 +25,9 @@ const Right: FC = () => {
   });
 
   return (
-    <div className="flex flex-col justify-around items-center h-full w-full font-roboto_serif relative">
+    <div className="relative flex h-full w-full flex-col items-center justify-around font-roboto_serif">
       <div>
-        <div className="rotate-90 text-xl w-[5vw] ">SHARE:</div>
+        <div className="w-[5vw] rotate-90 text-xl ">SHARE:</div>
         <div className="mt-12 flex flex-col items-center space-y-3">
           <a href="https://twitter.com/" rel="noopener noreferrer">
             <FiTwitter size="min(3vw,55px)" color="black" className="stroke-1" />
@@ -44,12 +44,12 @@ const Right: FC = () => {
       <div
         className={`${
           top ? "block animate-[display_0.5s_forwards]" : "animate-[hide_0.5s_forwards]"
-        } flex flex-col justify-start items-center h-36 absolute bottom-0`}
+        } absolute bottom-0 flex h-36 flex-col items-center justify-start`}
         onClick={top ? ScrollTop : () => {}}
         onKeyDown={ScrollTop}
         role="presentation"
       >
-        <div className="rotate-90 text-2xl w-[5vw]">
+        <div className="w-[5vw] rotate-90 text-2xl">
           <svg
             viewBox="0 0 130 24"
             fill="none"
@@ -76,19 +76,19 @@ const Right: FC = () => {
 const Left: FC = () => <div />;
 
 const Side: FC<Props> = ({ children }) => (
-  <div className="w-full h-full">
-    <div className="w-full h-full hidden md:block ">
-      <div className="flex w-full h-full">
-        <div className="basis-[5.0%] h-[calc(100vh_-_5rem)] sticky top-20 ">
+  <div className="h-full w-full">
+    <div className="hidden h-full w-full md:block ">
+      <div className="flex h-full w-full">
+        <div className="sticky top-20 h-[calc(100vh_-_5rem)] basis-[5.0%] ">
           <Left />
         </div>
         <div className="basis-[90.0%]">{children}</div>
-        <div className="basis-[5%] h-[calc(100vh_-_5rem)] sticky top-20 ">
+        <div className="sticky top-20 h-[calc(100vh_-_5rem)] basis-[5%] ">
           <Right />
         </div>
       </div>
     </div>
-    <div className=" w-full h-full md:hidden">{children}</div>
+    <div className=" h-full w-full md:hidden">{children}</div>
   </div>
 );
 
