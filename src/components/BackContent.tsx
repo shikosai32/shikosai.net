@@ -8,7 +8,7 @@ const BackContent: FC<Props> = ({ Contents }) => {
   return (
     <div className={`${Contents ? "block" : "hidden"} font-roboto_serif h-full w-full -z-10 fixed top-0`}>
       <div className="h-full w-full hidden md:block">
-        <div className="h-full w-[90%] flex-col flex justify-center items-center">
+        <div className="h-full w-full flex-col flex justify-center items-center">
           <div className="h-32 flex items-center w-full">
             <div className="basis-1/2 h-full border-r-2 border-black flex justify-center items-center">
               <img src="image/black/shikosai.png" alt="shikosai" className="h-[90%]" />

@@ -5,21 +5,21 @@ const Header: FC = () => (
   <div className="w-full h-20 fixed top-0 z-10 bg-white drop-shadow-md font-roboto_serif">
     <div className="hidden md:block w-full h-full">
       <div className="h-full w-full flex items-center justify-center space-x-8">
-        <a href="./access" rel="noopener noreferrer" className="font-semibold">
+        <a href="./access" rel="noopener noreferrer" className="font-semibold w-24">
           ACCESS
         </a>
-        <a href="./circle" rel="noopener noreferrer" className="font-semibold">
+        <a href="./circle" rel="noopener noreferrer" className="font-semibold w-24">
           CIRCLE
         </a>
         <a href="./" rel="noopener noreferrer" className="flex items-center space-x-2">
-          <div className="font-extrabold">The</div>
+          <div className="font-extrabold w-11 text-right">The</div>
           <img src="image/black/logo.png" alt="logo" className="h-12 w-12 border-[3px] border-black" />
-          <div className="font-extrabold">32nd.</div>
+          <div className="font-extrabold w-11">32nd.</div>
         </a>
-        <a href="./timetable" rel="noopener noreferrer" className="font-semibold">
+        <a href="./timetable" rel="noopener noreferrer" className="font-semibold w-24">
           TIMETABLE
         </a>
-        <a href="./staff" rel="noopener noreferrer" className="font-semibold">
+        <a href="./staff" rel="noopener noreferrer" className="font-semibold w-24">
           STAFF
         </a>
       </div>
