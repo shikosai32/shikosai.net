@@ -20,9 +20,13 @@
     "npm": "Please use yarn instead"
   },
   "dependencies": {
-    "next": "12.0.10",
+    "hamburger-react": "^2.4.1",
+    "moment": "^2.29.3",
+    "next": "12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-spring": "^9.4.2"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.0.10",
@@ -40,6 +44,7 @@
     "lint-staged": "^12.3.3",
     "postcss": "^8.4.6",
     "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.11",
     "sass": "^1.49.7",
     "tailwindcss": "^3.0.18",
     "typescript": "4.5.5"
