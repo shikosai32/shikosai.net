@@ -76,7 +76,7 @@ const Layout: FC<Props> = ({
       <TwitterMetas PageTitle={PageTitle} PageDescription={PageDescription} PageImage={PageImage} />
     </Head>
     <main>
-      <div>
+      <div className="font-montserrat">
         <Header />
         <div className="mt-20 min-h-[calc(100vh_-_5rem)]">
           <BackContent Contents={BackContents} />

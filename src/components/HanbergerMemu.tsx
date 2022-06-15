@@ -10,7 +10,7 @@ const Menu: NextPage = () => {
       <div
         className={`${
           isOpen ? "" : "translate-x-full"
-        } fixed top-0 left-0 z-20 h-screen w-screen bg-black pt-20 transition-all duration-500 ease-[cubic-bezier(.53,0,1,.67)]
+        } fixed top-0 left-0 z-20 h-screen w-screen bg-black pt-20 transition-all duration-700 ease-in-out
         `}
       >
         <div className="fixed top-0 left-0 h-20 w-full bg-black">

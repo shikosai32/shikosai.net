@@ -2,7 +2,7 @@ import { FC } from "react";
 import HanbergerMenu from "components/HanbergerMemu";
 
 const Header: FC = () => (
-  <div className="fixed top-0 z-10 h-20 w-full bg-white font-roboto_serif drop-shadow-md">
+  <div className="fixed top-0 z-10 h-20 w-full bg-white drop-shadow-md">
     <div className="hidden h-full w-full md:block">
       <div className="flex h-full w-full items-center justify-center space-x-8">
         <a href="./access" rel="noopener noreferrer" className="w-24 font-semibold">

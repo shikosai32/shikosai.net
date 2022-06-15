@@ -6,7 +6,7 @@ type Props = { Contents: boolean };
 const BackContent: FC<Props> = ({ Contents }) => {
   const CountDown = dynamic(() => import("components/CountDown"), { ssr: false });
   return (
-    <div className={`${Contents ? "block" : "hidden"} fixed top-0 -z-10 h-full w-full font-roboto_serif`}>
+    <div className={`${Contents ? "block" : "hidden"} fixed top-0 -z-10 h-full w-full`}>
       <div className="hidden h-full w-full md:block">
         <div className="flex h-full w-full flex-col items-center justify-center">
           <div className="flex h-32 w-full items-center">
