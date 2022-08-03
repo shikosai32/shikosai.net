@@ -10,16 +10,16 @@ const Time: FC = () => {
     setTime(shikosaiTime.diff(moment()));
   }, 1000);
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center font-light">
       <span className="hidden text-4xl underline decoration-2 underline-offset-8 md:block">
-        {dura.months()}months | {dura.days()}days | {dura.hours()}hours | {dura.minutes()}minutes | {dura.seconds()}
-        seconds
+        {dura.months()}Months | {dura.days()}Days | {dura.hours()}Hours | {dura.minutes()}Minutes | {dura.seconds()}
+        Seconds
       </span>
       <span className="text-xl md:hidden">
-        {dura.months()}months | {dura.days()}days | {dura.hours()}hours
+        {dura.months()}Months | {dura.days()}Days
       </span>
       <span className="text-xl md:hidden">
-        {dura.minutes()}minutes | {dura.seconds()}seconds
+        {dura.hours()}Hours | {dura.minutes()}Minutes | {dura.seconds()}Seconds
       </span>
     </div>
   );
