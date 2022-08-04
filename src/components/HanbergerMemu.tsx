@@ -14,7 +14,7 @@ const Menu: NextPage = () => {
         `}
       >
         <div className="fixed top-0 left-0 h-20 w-full bg-black">
-          <div className="relative flex h-full w-full items-center justify-between p-2">
+          <div className="relative flex h-full w-full items-center justify-between py-2 pl-6 pr-2">
             <div className="flex items-center space-x-1">
               <div className="font-extrabold text-white">The</div>
               <img src="image/white/logo.png" alt="logo" className="h-10 w-10 border-[2px] border-white" />
