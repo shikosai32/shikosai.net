@@ -7,7 +7,8 @@
     "start": "next start",
     "lint": "eslint --ignore-path .gitignore src/**/*.{ts,tsx}",
     "lint:fix": "eslint --ignore-path .gitignore src/**/*.{ts,tsx} --fix",
-    "format": "prettier --write src/**/*.{ts,tsx}",
+    "format": "prettier --ignore-path .gitignore --write --ignore-unknown .",
+    "format:check": "prettier --ignore-path .gitignore --check --ignore-unknown .",
     "prepare": "husky install"
   },
   "lint-staged": {
