@@ -4,7 +4,7 @@ import { FC } from "react";
 type Props = { Contents: boolean };
 
 const BackContent: FC<Props> = ({ Contents }) => {
-  const CountDown = dynamic(() => import("components/CountDown"), { ssr: false });
+  const CountDown = dynamic(() => import("~/components/CountDown"), { ssr: false });
   return (
     <div className={`${Contents ? "block" : "hidden"} fixed top-0 -z-10 h-full w-full font-roboto_serif`}>
       <div className="hidden h-full w-full md:block">

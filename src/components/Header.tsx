@@ -1,5 +1,5 @@
 import { FC } from "react";
-import HanbergerMenu from "components/HanbergerMemu";
+import HanbergerMenu from "~/components/HanbergerMemu";
 
 const Header: FC = () => (
   <div className="fixed top-0 z-10 h-20 w-full bg-white font-roboto_serif drop-shadow-md">
