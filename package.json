@@ -9,6 +9,8 @@
     "lint:fix": "eslint --ignore-path .gitignore src/**/*.{ts,tsx} --fix",
     "format": "prettier --ignore-path .gitignore --write --ignore-unknown .",
     "format:check": "prettier --ignore-path .gitignore --check --ignore-unknown .",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
     "prepare": "husky install"
   },
   "lint-staged": {
