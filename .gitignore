@@ -38,3 +38,6 @@ yarn-error.log*
 
 # git hook
 prepare-commit-msg
+
+# storybook
+storybook-static/
