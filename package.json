@@ -57,7 +57,7 @@
     "lint-staged": "12.3.3",
     "postcss": "8.4.16",
     "prettier": "2.5.1",
-    "prettier-plugin-tailwindcss": "0.1.11",
+    "prettier-plugin-tailwindcss": "0.1.13",
     "sass": "1.49.7",
     "sass-loader": "13.0.2",
     "storybook": "6.5.10",
