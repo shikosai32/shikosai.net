@@ -23,7 +23,7 @@
     "npm": "Please use yarn instead"
   },
   "dependencies": {
-    "hamburger-react": "2.4.1",
+    "hamburger-react": "2.5.0",
     "moment": "2.29.4",
     "next": "12.1.0",
     "react": "17.0.2",
