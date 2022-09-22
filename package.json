@@ -54,7 +54,7 @@
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-storybook": "0.6.4",
     "husky": "7.0.4",
-    "lint-staged": "12.3.3",
+    "lint-staged": "12.5.0",
     "postcss": "8.4.16",
     "prettier": "2.5.1",
     "prettier-plugin-tailwindcss": "0.1.13",
