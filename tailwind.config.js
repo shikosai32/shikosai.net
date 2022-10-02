@@ -5,6 +5,7 @@ module.exports = {
       fontFamily: {
         montserrat: ["Montserrat"],
         "dela-gothic-one": ["Dela Gothic One"],
+        "noto-serif-jp": ["Noto Serif JP"],
       },
       colors: {
         primary: "#B9060D",
