@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         primary: "#B9060D",
         secondary: "#4C6B8C",
+        success: "#4ECB71",
       },
       keyframes: {
         display: {
