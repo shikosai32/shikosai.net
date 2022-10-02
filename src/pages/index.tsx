@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
 import Layout from "~/components/Layout";
+import Flow from "~/components/index/Flow";
 
 const Home: NextPage = () => {
   const CountDown = dynamic(() => import("~/components/CountDown"), { ssr: false });
@@ -47,6 +48,11 @@ const Home: NextPage = () => {
 
         <div className="w-full pt-2">
           <CountDown />
+        </div>
+      </div>
+      <div className="hidden w-full md:block">
+        <div className="mt-24">
+          <Flow />
         </div>
       </div>
     </Layout>
