@@ -2,9 +2,11 @@ import type { NextPage } from "next";
 import dynamic from "next/dynamic";
 import Layout from "~/components/Layout";
 import Flow from "~/components/index/Flow";
+import Caution from "~/components/index/Caution";
 
 const Home: NextPage = () => {
   const CountDown = dynamic(() => import("~/components/CountDown"), { ssr: false });
+
   return (
     <Layout PageTitle="Hello World">
       <div className="hidden w-full md:block">
@@ -45,7 +47,6 @@ const Home: NextPage = () => {
             2022.10.23<span className="text-sm font-normal">(Sun.)</span>
           </div>
         </div>
-
         <div className="w-full pt-2">
           <CountDown />
         </div>
@@ -53,6 +54,9 @@ const Home: NextPage = () => {
       <div className="hidden w-full md:block">
         <div className="mt-24">
           <Flow />
+        </div>
+        <div className="mt-24">
+          <Caution />
         </div>
       </div>
     </Layout>
