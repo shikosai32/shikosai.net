@@ -11,7 +11,7 @@ const Header: FC = () => (
             ACCESS
           </a>
         </Link>
-        <Link href="./circle">
+        <Link href="/circle">
           <a rel="noopener noreferrer" className="font-semibold">
             CIRCLE
           </a>
@@ -37,11 +37,13 @@ const Header: FC = () => (
     </div>
     <div className="h-full w-full md:hidden">
       <div className="relative flex h-full w-full items-center justify-between py-2 pl-6 pr-2">
-        <a href="./" rel="noopener noreferrer" className="flex items-center space-x-1">
-          <div className="font-extrabold">The</div>
-          <img src="image/black/logo.png" alt="logo" className="h-10 w-10 border-[2px] border-black" />
-          <div className="font-extrabold">32nd.</div>
-        </a>
+        <Link href="/">
+          <a rel="noopener noreferrer" className="flex items-center space-x-1">
+            <div className="font-extrabold">The</div>
+            <img src="image/black/logo.png" alt="logo" className="h-10 w-10 border-[2px] border-black" />
+            <div className="font-extrabold">32nd.</div>
+          </a>
+        </Link>
         <HanbergerMenu />
       </div>
     </div>
