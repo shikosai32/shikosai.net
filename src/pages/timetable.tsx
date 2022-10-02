@@ -56,7 +56,7 @@ const TimeTable: NextPage = () => {
       <div className="mb-4 flex justify-evenly md:hidden">
         <Select
           className="m-0 p-0 md:text-lg lg:text-3xl"
-          defaultValue={{ value: "1", label: "Day1" }}
+          defaultValue={{ value: "1", label: "10/22(Sat.)" }}
           options={[
             { value: "1", label: "10/22(Sat.)" },
             { value: "2", label: "10/23(Sun.)" },
