@@ -2,7 +2,7 @@ import moment from "moment";
 import { FC, useState } from "react";
 
 const Time: FC = () => {
-  const shikosaiTime = moment("2022-10-22");
+  const shikosaiTime = moment("2022-10-22T10:00");
   const diff = shikosaiTime.diff(moment());
   const [time, setTime] = useState(diff);
   const dura = moment.duration(time + 1000);
@@ -10,16 +10,13 @@ const Time: FC = () => {
     setTime(shikosaiTime.diff(moment()));
   }, 1000);
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center font-light">
       <span className="hidden text-4xl underline decoration-2 underline-offset-8 md:block">
-        {dura.months()}months | {dura.days()}days | {dura.hours()}hours | {dura.minutes()}minutes | {dura.seconds()}
-        seconds
+        {dura.days()}Days | {dura.hours()}Hours | {dura.minutes()}Minutes | {dura.seconds()}Seconds
       </span>
+      <span className="text-xl md:hidden">{dura.days()}Days</span>
       <span className="text-xl md:hidden">
-        {dura.months()}months | {dura.days()}days | {dura.hours()}hours
-      </span>
-      <span className="text-xl md:hidden">
-        {dura.minutes()}minutes | {dura.seconds()}seconds
+        {dura.hours()}Hours | {dura.minutes()}Minutes | {dura.seconds()}Seconds
       </span>
     </div>
   );

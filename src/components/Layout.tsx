@@ -1,10 +1,8 @@
 import type { FC, ReactNode } from "react";
 import Head from "next/head";
-
 import Header from "~/components/Header";
 import Footer from "~/components/Footer";
 import Side from "~/components/Side";
-import BackContent from "~/components/BackContent";
 
 interface Information {
   PageTitle: string;
@@ -17,12 +15,10 @@ type Props = {
   PageDescription?: string;
   PageImage?: string;
   children: ReactNode;
-  BackContents?: boolean;
 };
 
 const DefaultDescription = "";
 const DefaultImage = "";
-const DefaultBackContents = true;
 
 const Metas: FC = () => (
   <>
@@ -60,13 +56,7 @@ const TwitterMetas: FC<Information> = ({ PageTitle, PageDescription, PageImage }
   </>
 );
 
-const Layout: FC<Props> = ({
-  PageTitle,
-  children,
-  PageDescription = DefaultDescription,
-  PageImage = DefaultImage,
-  BackContents = DefaultBackContents,
-}) => (
+const Layout: FC<Props> = ({ PageTitle, children, PageDescription = DefaultDescription, PageImage = DefaultImage }) => (
   <>
     <Head>
       <title>{PageTitle}</title>
@@ -79,7 +69,6 @@ const Layout: FC<Props> = ({
       <div>
         <Header />
         <div className="mt-20 min-h-[calc(100vh_-_5rem)]">
-          <BackContent Contents={BackContents} />
           <Side>{children}</Side>
         </div>
       </div>
@@ -91,7 +80,6 @@ const Layout: FC<Props> = ({
 Layout.defaultProps = {
   PageDescription: DefaultDescription,
   PageImage: DefaultImage,
-  BackContents: DefaultBackContents,
 };
 
 export default Layout;
