@@ -10,11 +10,11 @@ const Menu: NextPage = () => {
       <div
         className={`${
           isOpen ? "" : "translate-x-full"
-        } fixed top-0 left-0 z-20 h-screen w-screen bg-black pt-20 transition-all duration-500 ease-[cubic-bezier(.53,0,1,.67)]
+        } fixed top-0 left-0 z-20 h-screen w-screen bg-black pt-20 transition-all duration-700 ease-in-out
         `}
       >
         <div className="fixed top-0 left-0 h-20 w-full bg-black">
-          <div className="relative flex h-full w-full items-center justify-between p-2">
+          <div className="relative flex h-full w-full items-center justify-between py-2 pl-6 pr-2">
             <div className="flex items-center space-x-1">
               <div className="font-extrabold text-white">The</div>
               <img src="image/white/logo.png" alt="logo" className="h-10 w-10 border-[2px] border-white" />

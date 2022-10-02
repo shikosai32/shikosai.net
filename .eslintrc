@@ -12,8 +12,7 @@
     "next/core-web-vitals",
     "prettier",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
-    "plugin:@next/next/recommended"
+    "plugin:react/recommended"
   ],
   "overrides": [
     {

@@ -25,7 +25,7 @@ const Right: FC = () => {
   });
 
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-around font-roboto_serif">
+    <div className="relative flex h-full w-full flex-col items-center justify-around">
       <div>
         <div className="w-[5vw] rotate-90 text-xl ">SHARE:</div>
         <div className="mt-12 flex flex-col items-center space-y-3">
