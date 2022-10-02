@@ -38,3 +38,9 @@ yarn-error.log*
 
 # git hook
 prepare-commit-msg
+
+# vscode workspace
+*.code-workspace
+
+# storybook
+storybook-static/

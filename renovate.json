@@ -1,0 +1,22 @@
+{
+  "extends": ["config:base", ":prHourlyLimitNone", ":timezone(Asia/Tokyo)"],
+  "labels": ["dependencies", "renovate"],
+  "dependencyDashboard": true,
+  "pin": {
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
+      "groupName": "types",
+      "packagePatterns": ["^@types/"],
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
+    }
+  ]
+}
