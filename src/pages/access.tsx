@@ -17,11 +17,10 @@ const AccessPage: NextPage = () => (
       </div>
     </div>
     <div className="mt-10 text-center font-montserrat">
-      <div className="text-4xl md:text-6xl">- ADDRESS -</div>
-      <div className="mt-5 text-2xl md:text-3xl">〒312-8508</div>
-      <div className="text-2xl md:text-3xl">866 Nakane Hitachinaka Ibaraki, Japan</div>
-      <div className="text-2xl md:text-3xl">TEL 029-272-5201</div>
-      <div className="mt-5 text-4xl md:text-6xl">- BUS -</div>
+      <p className="text-4xl md:text-6xl">- ADDRESS -</p>
+      <p className="mt-5 text-2xl md:text-3xl">〒312-8508</p>
+      <p className="text-2xl md:text-3xl">866 Nakane Hitachinaka Ibaraki, Japan</p>
+      <p className="text-2xl md:text-3xl">TEL 029-272-5201</p>
     </div>
   </Layout>
 );
