@@ -44,3 +44,5 @@ prepare-commit-msg
 
 # storybook
 storybook-static/
+
+.idea
