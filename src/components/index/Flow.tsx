@@ -1,5 +1,4 @@
 import { FC, ReactNode } from "react";
-import lbToBr from "~/utils/lbToBr";
 import flowItems from "./flowItems";
 
 const Box: FC<{ className: string; children: ReactNode }> = ({ className, children }) => (
@@ -12,14 +11,14 @@ const Box: FC<{ className: string; children: ReactNode }> = ({ className, childr
 const Flow: FC = () => (
   <>
     {flowItems.map((flowItem, index) => (
-      <div key={flowItem.title} className="relative">
+      <div key={flowItem.id} className="relative">
         <Box className={`grid grid-cols-2 ${index % 2 === 0 ? "bg-primary" : "bg-secondary"}`}>
           <div className="flex items-center justify-center before:absolute before:left-1/2 before:h-3/4 before:w-[2px] before:bg-black before:content-['']">
             <img src={`/image/white/${flowItem.title}.png`} alt={flowItem.title} width="50%" height="50%" />
           </div>
           <div className="flex flex-col items-center justify-center text-center font-dela-gothic-one text-white">
             <span className="text-3xl">{flowItem.subtitle}</span>
-            <span className="text-2xl">{lbToBr(flowItem.description)}</span>
+            <span className="text-2xl">{flowItem.description}</span>
           </div>
         </Box>
         <div>
