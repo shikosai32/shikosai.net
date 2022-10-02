@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        montserrat:["Montserrat"]
+        montserrat: ["Montserrat"],
       },
       keyframes: {
         display: {
