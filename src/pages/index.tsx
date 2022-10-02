@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
-import Layout from "components/Layout";
+import Layout from "~/components/Layout";
 
 const Home: NextPage = () => {
-  const CountDown = dynamic(() => import("components/CountDown"), { ssr: false });
+  const CountDown = dynamic(() => import("~/components/CountDown"), { ssr: false });
   return (
     <Layout PageTitle="Hello World">
       <div className="hidden w-full md:block">
