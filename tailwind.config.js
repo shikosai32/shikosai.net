@@ -4,6 +4,11 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ["Montserrat"],
+        "dela-gothic-one": ["Dela Gothic One"],
+      },
+      colors: {
+        primary: "#B9060D",
+        secondary: "#4C6B8C",
       },
       keyframes: {
         display: {
