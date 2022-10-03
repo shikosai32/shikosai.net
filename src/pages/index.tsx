@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   const CountDown = dynamic(() => import("~/components/CountDown"), { ssr: false });
 
   return (
-    <Layout PageTitle="Hello World">
+    <Layout PageTitle="shikosai32">
       <div className="hidden w-full md:block">
         <div className="py-5">
           <div className="flex w-full items-end">
