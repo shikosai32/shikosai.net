@@ -31,8 +31,7 @@ const Caution: FC = () => (
             </figure>
             <p>
               当日ご入場なさる際には、予め入場予約をして頂く必要があります。お手数をおかけしますが、
-              {/* TODO: 正しいURLに置き換える. */}
-              <Link href="https://example.com">
+              <Link href="https://forms.gle/7SfzGJCLVANwFXY46">
                 <a className="text-secondary underline visited:text-primary">こちらのリンク</a>
               </Link>
               よりフォームにご回答願います。
