@@ -10,7 +10,9 @@ const Caution: FC = () => (
     <div className="mt-12 flex justify-center">
       <Card className="w-5/6 py-12 px-8 text-xl">
         <p>
-          第32回茨香祭では、新型コロナウイルス感染症対策のために、いくつかの注意事項がございます。何卒、ご了承願います。
+          第32回茨香祭では新型コロナウイルス感染症対策のため、注意事項がございます。
+          <br />
+          ご理解とご協力のほどお願い申し上げます。
         </p>
         <div className="mt-12 space-y-4">
           <div className="flex items-center space-x-4">
