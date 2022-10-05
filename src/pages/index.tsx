@@ -21,13 +21,11 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center p-10 md:hidden">
-        <div className="w-full">
-          <img src="image/logo/logo.jpeg" alt="shikosai" className="w-full" />
-        </div>
+        <img src="image/logo/logo.jpeg" alt="shikosai" className="w-full" />
         <div className="flex w-[80%] flex-col items-center justify-center border-b-2 border-black pt-5 pb-3 text-3xl">
-          <div className="font-bold">
+          <p className="font-bold">
             2022.10.22<span className="text-sm font-normal">(Sat.)</span>
-          </div>
+          </p>
           <svg
             viewBox="0 0 24 24"
             fill="none"
@@ -39,9 +37,9 @@ const Home: NextPage = () => {
           >
             <path strokeWidth="5" d="M12,0 l 0,24" />
           </svg>
-          <div className="font-bold">
+          <p className="font-bold">
             2022.10.23<span className="text-sm font-normal">(Sun.)</span>
-          </div>
+          </p>
         </div>
 
         <div className="w-full pt-2">
