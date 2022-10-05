@@ -1,11 +1,10 @@
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
-import Layout from "~/components/Layout";
 
 const Home: NextPage = () => {
   const CountDown = dynamic(() => import("~/components/CountDown"), { ssr: false });
   return (
-    <Layout PageTitle="Hello World">
+    <>
       <div className="hidden w-full md:block">
         <div className="py-5">
           <div className="flex w-full items-end">
@@ -49,7 +48,7 @@ const Home: NextPage = () => {
           <CountDown />
         </div>
       </div>
-    </Layout>
+    </>
   );
 };
 

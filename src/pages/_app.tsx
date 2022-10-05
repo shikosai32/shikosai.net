@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import type { AppProps } from "next/app";
+import Layout from "~/components/Layout/Layout";
 
 import * as gtag from "~/lib/gtag";
 
@@ -18,10 +19,10 @@ const MyApp = ({ Component, pageProps, router: routerProp }: AppProps): JSX.Elem
     };
   }, [router.events]);
   return (
-    <>
+    <Layout PageTitle="Hello World">
       {/* eslint-disable-next-line react/jsx-props-no-spreading */}
       <Component {...pageProps} key={routerProp.asPath} />
-    </>
+    </Layout>
   );
 };
 
