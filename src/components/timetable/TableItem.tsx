@@ -40,8 +40,8 @@ const TableItem: FC<Props> = (props) => {
       className="relative mb-2 rounded-3xl bg-white p-4 font-roboto-serif shadow-2xl"
     >
       <h3 className="text-2xl">{eventTitle}</h3>
-      <p>{description}</p>
-      <p className="absolute right-6 bottom-6 text-right text-sm	text-[#707070]">
+      <p className="mb-6 md:mb-0">{description}</p>
+      <p className="absolute right-4 bottom-4 text-right text-sm text-[#707070] md:right-6	md:bottom-6">
         {start} ~ {end}
       </p>
     </div>
