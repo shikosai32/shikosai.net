@@ -15,10 +15,10 @@ const TimeTable: NextPage = () => {
   useEffect(() => {
     if (stage !== "in") {
       setData(timetableData.out);
-      setHeightSize(2);
+      setHeightSize(2.5);
     } else {
       setData(timetableData.in);
-      setHeightSize(2.5);
+      setHeightSize(3);
     }
   }, [stage]);
 
@@ -69,11 +69,13 @@ const TimeTable: NextPage = () => {
       </div>
       <div className="border-t-4 border-b-4 border-solid border-black pt-3 pb-4">
         <div className="hidden items-start justify-evenly md:flex">
-          <p className="w-5/12 text-center text-2xl lg:text-3xl">10/22(Sat.)</p>
-          <p className="text-2xl md:text-3xl lg:text-4xl">{stage !== "in" ? "Outdoor Stage" : "Indoor Stage"}</p>
+          <p className="w-5/12 text-center text-xl lg:text-2xl">10/22(Sat.)</p>
+          <p className="text-center text-xl md:text-2xl lg:text-3xl">
+            {stage !== "in" ? "Outdoor Stage" : "Indoor Stage"}
+          </p>
           <div className="w-5/12">
-            <p className="text-center text-2xl lg:text-3xl">10/23(Sun.)</p>
-            <p className="mt-2 text-center lg:text-lg">学内開催につき、一般の方の入場はできません。</p>
+            <p className="text-center text-xl lg:text-2xl">10/23(Sun.)</p>
+            <p className="mt-2 text-center">学内開催につき、一般の方の入場はできません。</p>
           </div>
         </div>
         <div className="md:hidden">

@@ -40,10 +40,10 @@ const TableItem: FC<Props> = (props) => {
       className="mb-2 rounded-lg bg-stone-600 p-4"
     >
       <h3 className="text-2xl	text-white">{eventTitle}</h3>
-      <p className="pb-2 text-sm text-white">
+      <p className="text-white">{description}</p>
+      <p className="text-right text-sm text-white">
         {start} ~ {end}
       </p>
-      <p className="text-white">{description}</p>
     </div>
   );
 };
