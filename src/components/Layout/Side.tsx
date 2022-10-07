@@ -42,7 +42,7 @@ const Right: FC = () => {
 
           <li>
             <a
-              href="http://line.me/R/msg/text/?茨香祭について確認しよう!%0D%0A&url=https://32.shikosai.net"
+              href="http://line.me/R/msg/text/?茨香祭について確認しよう!%0D%0Ahttps://32.shikosai.net"
               rel="noopener noreferrer"
               target="_blank"
             >
