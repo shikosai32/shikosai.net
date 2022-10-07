@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import { useState, useEffect } from "react";
-import Select from "react-select";
 import Layout from "~/components/Layout/Layout";
 import TableItem from "~/components/timetable/TableItem";
 import timetableData from "~/static/timetableData";
