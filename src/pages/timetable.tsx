@@ -50,18 +50,14 @@ const TimeTable: NextPage = () => {
         </div>
       </div>
       <div className="mb-4 flex justify-evenly font-roboto-serif md:hidden">
-        <Select
-          className="m-0 p-0 md:text-lg lg:text-3xl"
-          defaultValue={{ value: "1", label: "10/22(Sat.)" }}
-          options={[
-            { value: "1", label: "10/22(Sat.)" },
-            { value: "2", label: "10/23(Sun.)" },
-          ]}
-          components={{
-            IndicatorSeparator: () => null,
-          }}
-          onChange={(e) => setDay(e?.value ?? "1")}
-        />
+        <select
+          className="rounded-2xl bg-black p-2 pl-3 text-white md:text-lg lg:text-3xl"
+          onChange={(e) => setDay(e.target.value)}
+          defaultValue="1"
+        >
+          <option value="1" label="10/22(Sat.)" />
+          <option value="2" label="10/23(Sun.)" />
+        </select>
       </div>
       <div className="border-t-4 border-b-4 border-solid border-black pt-3 pb-4 font-roboto-serif">
         <div className="hidden items-start justify-evenly md:flex">
