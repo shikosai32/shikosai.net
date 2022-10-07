@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Layout from "~/components/Layout/Layout";
 
 const AccessPage: NextPage = () => (
-  <Layout PageTitle="Access">
+  <Layout PageTitle="Access - shikosai32">
     <div className="relative mx-5 mt-[150px] border border-black md:mx-20 md:mt-[100px]">
       <div className="absolute top-[-20px] left-0 right-0 m-auto w-[100px] transform bg-white md:top-[-50px] md:w-[200px]">
         <img src="/image/black/access.png" alt="access" />

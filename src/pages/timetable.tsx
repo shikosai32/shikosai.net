@@ -33,7 +33,7 @@ const TimeTable: NextPage = () => {
   }, [day, stage]);
 
   return (
-    <Layout PageTitle="TimeTable">
+    <Layout PageTitle="TimeTable - shikosai32">
       <div className="flex flex-col items-end justify-evenly py-10 text-center font-roboto-serif lg:flex-row">
         <div className="lg:w-1/3" />
         <img src="image/black/timetable.png" className="mx-auto mb-4 h-10 md:h-12 lg:h-20" alt="TimeTable" />
