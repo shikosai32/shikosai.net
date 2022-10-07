@@ -49,13 +49,11 @@ const Home: NextPage = () => {
           <CountDown />
         </div>
       </div>
-      <div className="hidden w-full md:block">
-        <div className="mt-24">
-          <Flow />
-        </div>
-        <div className="mt-24">
-          <Caution />
-        </div>
+      <div className="mt-24 hidden w-full md:block">
+        <Flow />
+      </div>
+      <div className="mt-24 mb-6 w-full">
+        <Caution />
       </div>
     </Layout>
   );
