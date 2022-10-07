@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import Layout from "~/components/Layout";
 
 const Staff: NextPage = () => (
-  <Layout PageTitle="Staff | 第32回茨香祭HP">
+  <Layout PageTitle="Staff">
     <figure className="my-10 flex justify-center">
       <img src="image/black/staff.png" alt="staff" width="200" />
     </figure>
