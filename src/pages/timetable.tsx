@@ -37,20 +37,16 @@ const TimeTable: NextPage = () => {
       <div className="flex flex-col items-end justify-evenly py-10 text-center font-roboto-serif lg:flex-row">
         <div className="lg:w-1/3" />
         <img src="image/black/timetable.png" className="mx-auto mb-4 h-10 md:h-12 lg:h-20" alt="TimeTable" />
-        <div className="mx-auto flex items-end justify-center gap-x-4 lg:mx-0 lg:w-1/3">
-          <span className="mb-1 md:text-2xl lg:text-4xl">for</span>
-          <Select
-            className="m-0 p-0 md:text-lg lg:text-3xl"
-            defaultValue={{ value: "out", label: "Outdoor Stage" }}
-            options={[
-              { value: "out", label: "Outdoor Stage" },
-              { value: "in", label: "Indoor Stage" },
-            ]}
-            components={{
-              IndicatorSeparator: () => null,
-            }}
-            onChange={(e) => setStage(e?.value ?? "out")}
-          />
+        <div className="mx-auto flex items-center justify-center gap-x-4 lg:mx-0 lg:w-1/3">
+          <span className="md:text-2xl lg:text-4xl">for</span>
+          <select
+            className="rounded-2xl bg-black p-2 pl-3 text-white md:text-lg lg:text-3xl"
+            onChange={(e) => setStage(e.target.value)}
+            defaultValue="out"
+          >
+            <option value="out" label="Outdoor" />
+            <option value="in" label="Indoor" />
+          </select>
         </div>
       </div>
       <div className="mb-4 flex justify-evenly font-roboto-serif md:hidden">
