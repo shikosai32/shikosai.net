@@ -28,6 +28,7 @@ const OgpMetas: FC<LayoutInformation> = ({ PageTitle, PageDescription, PageImage
   <>
     <meta property="og:title" content={PageTitle} />
     <meta property="og:description" content={PageDescription} />
+    <meta property="og:type" content="website" />
     <meta property="og:image" content={PageImage} />
     <meta property="og:image:alt" content="" />
     <meta property="og:site_name" content="" />
@@ -55,8 +56,16 @@ const Layout: FC<LayoutProps> = ({
       <title>{PageTitle}</title>
       <Metas />
       <SeoMetas PageTitle={PageTitle} PageDescription={PageDescription} PageImage={PageImage} />
-      <OgpMetas PageTitle={PageTitle} PageDescription={PageDescription} PageImage={PageImage} />
-      <TwitterMetas PageTitle={PageTitle} PageDescription={PageDescription} PageImage={PageImage} />
+      <OgpMetas
+        PageTitle="【第32回】茨城工業高等専門学校 茨香祭 公式ホームページ"
+        PageDescription="第32回 茨城工業高等専門学校 茨香祭 公式ホームページです。サークルなどの各種情報を掲載しています。どうぞご利用ください!"
+        PageImage="https://32.shikosai.net/image/ogp/ogp_image.png"
+      />
+      <TwitterMetas
+        PageTitle="【第32回】茨城工業高等専門学校 茨香祭 公式ホームページ"
+        PageDescription="第32回 茨城工業高等専門学校 茨香祭 公式ホームページです。サークルなどの各種情報を掲載しています。どうぞご利用ください!"
+        PageImage="https://32.shikosai.net/image/ogp/ogp_image.png"
+      />
     </Head>
     <main>
       <Header />
