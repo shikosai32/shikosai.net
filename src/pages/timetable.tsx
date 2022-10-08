@@ -40,8 +40,12 @@ const TimeTable: NextPage = () => {
             onChange={(e) => setDay(e.target.value)}
             defaultValue="1"
           >
-            <option value="1" label="10/22(Sat.)" />
-            <option value="2" label="10/23(Sun.)" />
+            <option value="1" label="10/22(Sat.)">
+              10/22(Sat.)
+            </option>
+            <option value="2" label="10/23(Sun.)">
+              10/23(Sun.)
+            </option>
           </select>
         </div>
       </div>
@@ -51,8 +55,12 @@ const TimeTable: NextPage = () => {
           onChange={(e) => setStage(e.target.value)}
           defaultValue="out"
         >
-          <option value="out" label="Outdoor" />
-          <option value="in" label="Indoor" />
+          <option value="out" label="Outdoor">
+            Outdoor
+          </option>
+          <option value="in" label="Indoor">
+            Indoor
+          </option>
         </select>
       </div>
       <div className="text-center font-montserrat">
