@@ -51,9 +51,21 @@ const Right: FC = () => {
           </li>
 
           <li>
-            <a href="share" rel="noopener noreferrer">
-              <FiShare2 size="min(3vw,50px)" color="black" className="stroke-1" />
-            </a>
+            <FiShare2
+              size="min(3vw,50px)"
+              color="black"
+              className="stroke-1"
+              onClick={(event) => {
+                event.preventDefault();
+                if (navigator.share) {
+                  navigator.share({
+                    title: "第32回茨香祭公式ホームページ - 茨城工業高等専門学校",
+                    text: "茨香祭について確認しよう",
+                    url: "https://32.shikosai.net",
+                  });
+                }
+              }}
+            />
           </li>
         </ul>
       </div>
