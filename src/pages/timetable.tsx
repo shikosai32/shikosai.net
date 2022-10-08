@@ -60,14 +60,14 @@ const TimeTable: NextPage = () => {
         <p>{day !== "2" ? "※一般公開" : "※学内開催"}</p>
         <div className="relative mx-auto mt-1 mb-4 h-0.5 w-3/4 bg-black before:absolute before:top-[-3px] before:-left-1 before:h-2 before:w-2 before:rounded-full before:bg-black before:content-[''] after:absolute after:top-[-3px] after:-right-1 after:h-2 after:w-2 after:rounded-full after:bg-black after:content-[''] md:w-11/12" />
       </div>
-      <div className="pt-3 pb-4 font-roboto-serif">
+      <div className="pt-3 pb-4 font-montserrat">
         <div className="hidden items-start justify-evenly md:flex">
           <div className="relative w-2/5">
-            <img src="/image/frame.svg" alt="flame" />
+            <img className="w-full" src="/image/frame.svg" alt="flame" />
             <p className="absolute right-0 left-0 top-5 text-center text-xl lg:text-2xl">Outdoor Stage</p>
           </div>
           <div className="relative w-2/5">
-            <img src="/image/frame.svg" alt="flame" />
+            <img className="w-full" src="/image/frame.svg" alt="flame" />
             <p className="absolute right-0 left-0 top-5 text-center text-xl lg:text-2xl">Indoor Stage</p>
           </div>
         </div>
