@@ -64,9 +64,9 @@ const timetableData: Data = {
       {
         eventTitle: "コスプレショー",
         description: "個性的なコスプレイヤーが出場！観客を魅了してしまうかも！？",
-        start: "10:30",
+        start: "10:00",
         end: "11:00",
-        time: 3,
+        time: 6,
         isBlank: false,
       },
       {
