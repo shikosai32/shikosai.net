@@ -64,11 +64,15 @@ const TimeTable: NextPage = () => {
         <div className="hidden items-start justify-evenly md:flex">
           <div className="relative w-2/5">
             <img className="w-full" src="/image/frame.svg" alt="flame" />
-            <p className="absolute right-0 left-0 top-5 text-center text-xl lg:text-2xl">Outdoor Stage</p>
+            <p className="absolute right-0 left-0 top-3 text-center text-xl lg:top-5 lg:text-3xl xl:text-4xl">
+              Outdoor Stage
+            </p>
           </div>
           <div className="relative w-2/5">
             <img className="w-full" src="/image/frame.svg" alt="flame" />
-            <p className="absolute right-0 left-0 top-5 text-center text-xl lg:text-2xl">Indoor Stage</p>
+            <p className="absolute right-0 left-0 top-3 text-center text-xl lg:top-5 lg:text-3xl xl:text-4xl">
+              Indoor Stage
+            </p>
           </div>
         </div>
         <div className="mx-auto w-4/5 md:hidden">
