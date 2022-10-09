@@ -37,11 +37,11 @@ const TableItem: FC<Props> = (props) => {
         minHeight: `${heightSize * time + 0.5 * (time - 1)}rem`,
         height: "auto",
       }}
-      className="mb-2 rounded-lg bg-stone-600 p-4"
+      className="relative mb-2 rounded-3xl bg-white p-4 font-roboto-serif shadow-2xl"
     >
-      <h3 className="text-2xl	text-white">{eventTitle}</h3>
-      <p className="text-white">{description}</p>
-      <p className="text-right text-sm text-white">
+      <h3 className="text-2xl">{eventTitle}</h3>
+      <p>{description}</p>
+      <p className="absolute right-6 bottom-6 text-right text-sm	text-[#707070]">
         {start} ~ {end}
       </p>
     </div>
