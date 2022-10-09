@@ -57,13 +57,13 @@ const Layout: FC<LayoutProps> = ({
       <Metas />
       <SeoMetas PageTitle={PageTitle} PageDescription={PageDescription} PageImage={PageImage} />
       <OgpMetas
-        PageTitle="【第32回】茨城工業高等専門学校 茨香祭 公式ホームページ"
-        PageDescription="第32回 茨城工業高等専門学校 茨香祭 公式ホームページです。サークルなどの各種情報を掲載しています。どうぞご利用ください!"
+        PageTitle="第32回茨香祭公式ホームページ - 茨城工業高等専門学校"
+        PageDescription="第32回茨香祭の公式ホームページです。サークルなどの各種情報を掲載しています。どうぞご利用ください！"
         PageImage="https://32.shikosai.net/image/ogp/ogp_image.png"
       />
       <TwitterMetas
-        PageTitle="【第32回】茨城工業高等専門学校 茨香祭 公式ホームページ"
-        PageDescription="第32回 茨城工業高等専門学校 茨香祭 公式ホームページです。サークルなどの各種情報を掲載しています。どうぞご利用ください!"
+        PageTitle="第32回茨香祭公式ホームページ - 茨城工業高等専門学校"
+        PageDescription="第32回茨香祭の公式ホームページです。サークルなどの各種情報を掲載しています。どうぞご利用ください！"
         PageImage="https://32.shikosai.net/image/ogp/ogp_image.png"
       />
     </Head>
