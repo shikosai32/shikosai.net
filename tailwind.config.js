@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ["Montserrat"],
+        "roboto-serif": ["Roboto Serif"],
       },
       keyframes: {
         display: {
