@@ -4,8 +4,9 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ["Montserrat"],
-        "dela-gothic-one": ["Dela Gothic One"],
         "noto-serif-jp": ["Noto Serif JP"],
+        "roboto-serif": ["Roboto Serif"],
+        "dela-gothic-one": ["Dela Gothic One"],
       },
       colors: {
         primary: "#B9060D",

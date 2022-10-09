@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NextPage } from "next";
 import { FiTwitter, FiInstagram, FiShare2 } from "react-icons/fi";
 import { Spin as Button } from "hamburger-react";
+import Link from "next/link";
 
 const Menu: NextPage = () => {
   const [isOpen, setOpen] = useState(false);
@@ -16,9 +17,9 @@ const Menu: NextPage = () => {
         <div className="fixed top-0 left-0 h-20 w-full bg-black">
           <div className="relative flex h-full w-full items-center justify-between py-2 pl-6 pr-2">
             <div className="flex items-center space-x-1">
-              <div className="font-extrabold text-white">The</div>
+              <span className="font-extrabold text-white">The</span>
               <img src="image/white/logo.png" alt="logo" className="h-10 w-10 border-[2px] border-white" />
-              <div className="font-extrabold text-white">32nd.</div>
+              <span className="font-extrabold text-white">32nd.</span>
             </div>
             <div className="m-2 flex h-14 w-14 flex-none items-center justify-center">
               <Button toggled={isOpen} toggle={setOpen} color="#ffffff" />
@@ -28,42 +29,46 @@ const Menu: NextPage = () => {
 
         <div className="h-[calc(100vh_-_5rem)] w-full overflow-y-auto py-10">
           <div className="flex flex-col items-center justify-center space-y-10">
-            <a
-              href="./timetable"
-              rel="noopener noreferrer"
-              className={`${isOpen ? "" : "translate-y-96"} transition-all delay-[0ms] duration-500 ease-in`}
-            >
-              <img src="image/white/timetable.png" alt="timetable" className="h-12" />
-            </a>
-            <a
-              href="./circle"
-              rel="noopener noreferrer"
-              className={`${isOpen ? "" : "translate-y-96"} transition-all delay-[25ms] duration-500 ease-in`}
-            >
-              <img src="image/white/circle.png" alt="circle" className="h-12" />
-            </a>
-            <a
-              href="./access"
-              rel="noopener noreferrer"
-              className={`${isOpen ? "" : "translate-y-96"} transition-all delay-[50ms] duration-500 ease-in`}
-            >
-              <img src="image/white/access.png" alt="access" className="h-12" />
-            </a>
-            <a
-              href="./staff"
-              rel="noopener noreferrer"
-              className={`${isOpen ? "" : "translate-y-96"} transition-all delay-[75ms] duration-500 ease-in`}
-            >
-              <img src="image/white/staff.png" alt="staff" className="h-12" />
-            </a>
+            <Link href="/timetable">
+              <a
+                rel="noopener noreferrer"
+                className={`${isOpen ? "" : "translate-y-96"} transition-all delay-[0ms] duration-500 ease-in`}
+              >
+                <img src="image/white/timetable.png" alt="timetable" className="h-12" />
+              </a>
+            </Link>
+            <Link href="/circle">
+              <a
+                rel="noopener noreferrer"
+                className={`${isOpen ? "" : "translate-y-96"} transition-all delay-[25ms] duration-500 ease-in`}
+              >
+                <img src="image/white/circle.png" alt="circle" className="h-12" />
+              </a>
+            </Link>
+            <Link href="/access">
+              <a
+                rel="noopener noreferrer"
+                className={`${isOpen ? "" : "translate-y-96"} transition-all delay-[50ms] duration-500 ease-in`}
+              >
+                <img src="image/white/access.png" alt="access" className="h-12" />
+              </a>
+            </Link>
+            <Link href="/staff">
+              <a
+                rel="noopener noreferrer"
+                className={`${isOpen ? "" : "translate-y-96"} transition-all delay-[75ms] duration-500 ease-in`}
+              >
+                <img src="image/white/staff.png" alt="staff" className="h-12" />
+              </a>
+            </Link>
             <div className="flex flex-col items-center justify-center space-y-4">
-              <div
+              <p
                 className={`${
                   isOpen ? "" : "translate-y-96"
                 } text-[22px] font-light text-white  transition-all delay-[100ms] duration-500 ease-in`}
               >
                 SHARE
-              </div>
+              </p>
               <a
                 href="https://twitter.com/"
                 rel="noopener noreferrer"
