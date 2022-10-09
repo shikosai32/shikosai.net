@@ -10,7 +10,7 @@ const Caution: FC = () => (
     <div className="mt-12 flex justify-center">
       <Card className="w-5/6 py-12 px-8 text-xl">
         <p>
-          第32回茨香祭では新型コロナウイルス感染症対策のため、注意事項がございます。
+          第32回茨香祭にご来場いただく際に、いくつかの注意事項がございます。
           <br />
           ご理解とご協力のほどお願い申し上げます。
         </p>
@@ -19,13 +19,15 @@ const Caution: FC = () => (
             <figure>
               <BsFillCheckCircleFill size={25} className="text-success" />
             </figure>
-            <p>会場にお越しになる際には、マスクの着用をお願いします。</p>
+            <p>会場ではマスクの着用をお願いします。</p>
           </div>
           <div className="flex items-center space-x-4">
             <figure>
               <BsFillCheckCircleFill size={25} className="text-success" />
             </figure>
-            <p>第32回茨香祭は2日間に渡って開催されますが、一般の方のご入場は1日目のみとさせて頂いております。</p>
+            <p>
+              第32回茨香祭は2日間に渡って開催されます。ただし、一般の方(在校生の保護者と県内小中学生及びその保護者)のご入場につきましては、1日目のみとさせて頂いております。
+            </p>
           </div>
           <div className="flex items-center space-x-4">
             <figure>
@@ -38,7 +40,23 @@ const Caution: FC = () => (
                   こちらのリンク
                 </a>
               </Link>
-              よりフォームにご回答願います。
+              よりフォームにご回答願います。 また、お申込多数となった場合、申込受付を終了する場合がございます。
+            </p>
+          </div>
+          <div className="flex items-center space-x-4">
+            <figure>
+              <BsFillCheckCircleFill size={25} className="text-success" />
+            </figure>
+            <p>
+              駐車場の台数に限りがございますので、公共交通機関をご利用の上お越しください。その際、近隣の店舗駐車場への駐車、路上駐車は大変迷惑となりますので、絶対におやめください。
+            </p>
+          </div>
+          <div className="flex items-center space-x-4">
+            <figure>
+              <BsFillCheckCircleFill size={25} className="text-success" />
+            </figure>
+            <p>
+              校内で昼食の販売等は行っておりません。校内で昼食を済ませる場合、近隣のコンビニで購入して頂くか、お弁当を持参して頂く必要があります。飲食スペースは、大教室または4.5Cをご利用ください。
             </p>
           </div>
         </div>
