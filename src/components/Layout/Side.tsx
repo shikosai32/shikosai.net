@@ -1,7 +1,7 @@
-import { FC, ReactNode, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import type { FC } from "react";
 import { FiTwitter, FiInstagram, FiShare2 } from "react-icons/fi";
-
-type Props = { children: ReactNode };
+import type { SideProps } from "./type/model";
 
 const ScrollTop = () => {
   window.scrollTo({
@@ -27,19 +27,26 @@ const Right: FC = () => {
   return (
     <div className="relative flex h-full w-full flex-col items-center justify-around">
       <div>
-        <div className="w-[5vw] rotate-90 text-xl ">SHARE:</div>
-        <div className="mt-12 flex flex-col items-center space-y-3">
-          <a href="https://twitter.com/" rel="noopener noreferrer">
-            <FiTwitter size="min(3vw,55px)" color="black" className="stroke-1" />
-          </a>
+        <p className="w-[5vw] rotate-90 text-xl ">SHARE:</p>
+        <ul className="mt-12 flex list-none flex-col items-center space-y-3">
+          <li>
+            <a href="https://twitter.com/" rel="noopener noreferrer">
+              <FiTwitter size="min(3vw,55px)" color="black" className="stroke-1" />
+            </a>
+          </li>
 
-          <a href="https://instagram.com/" rel="noopener noreferrer">
-            <FiInstagram size="min(3vw,50px)" color="black" className="stroke-1" />
-          </a>
-          <a href="share" rel="noopener noreferrer">
-            <FiShare2 size="min(3vw,50px)" color="black" className="stroke-1" />
-          </a>
-        </div>
+          <li>
+            <a href="https://instagram.com/" rel="noopener noreferrer">
+              <FiInstagram size="min(3vw,50px)" color="black" className="stroke-1" />
+            </a>
+          </li>
+
+          <li>
+            <a href="share" rel="noopener noreferrer">
+              <FiShare2 size="min(3vw,50px)" color="black" className="stroke-1" />
+            </a>
+          </li>
+        </ul>
       </div>
       <div
         className={`${
@@ -75,7 +82,7 @@ const Right: FC = () => {
 
 const Left: FC = () => <div />;
 
-const Side: FC<Props> = ({ children }) => (
+const Side: FC<SideProps> = ({ children }) => (
   <div className="h-full w-full">
     <div className="hidden h-full w-full md:block ">
       <div className="flex h-full w-full">
