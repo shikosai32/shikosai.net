@@ -64,7 +64,7 @@ const TimeTable: NextPage = () => {
         </select>
       </div>
       <div className="text-center font-montserrat">
-        <p className="text-2xl font-semibold md:text-3xl">{day !== "2" ? "10/23(Sun.)" : "10/23(Sun.)"}</p>
+        <p className="text-2xl font-semibold md:text-3xl">{day !== "2" ? "10/22(Sat.)" : "10/23(Sun.)"}</p>
         <p>{day !== "2" ? "※一般公開" : "※学内開催"}</p>
         <div className="relative mx-auto mt-1 mb-4 h-0.5 w-3/4 bg-black before:absolute before:top-[-3px] before:-left-1 before:h-2 before:w-2 before:rounded-full before:bg-black before:content-[''] after:absolute after:top-[-3px] after:-right-1 after:h-2 after:w-2 after:rounded-full after:bg-black after:content-[''] md:w-11/12" />
       </div>
