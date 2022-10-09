@@ -1,21 +1,9 @@
-import type { FC, ReactNode } from "react";
+import type { FC } from "react";
 import Head from "next/head";
-import Header from "~/components/Header";
-import Footer from "~/components/Footer";
-import Side from "~/components/Side";
-
-interface Information {
-  PageTitle: string;
-  PageDescription: string;
-  PageImage: string;
-}
-
-type Props = {
-  PageTitle: string;
-  PageDescription?: string;
-  PageImage?: string;
-  children: ReactNode;
-};
+import Header from "~/components/Layout/Header";
+import Footer from "~/components/Layout/Footer";
+import Side from "~/components/Layout/Side";
+import type { LayoutInformation, LayoutProps } from "./type/model";
 
 const DefaultDescription = "";
 const DefaultImage = "";
@@ -28,7 +16,7 @@ const Metas: FC = () => (
   </>
 );
 
-const SeoMetas: FC<Information> = ({ PageTitle, PageDescription, PageImage }) => (
+const SeoMetas: FC<LayoutInformation> = ({ PageTitle, PageDescription, PageImage }) => (
   <>
     <meta name="name" content={PageTitle} />
     <meta name="image" content={PageImage} />
@@ -36,7 +24,7 @@ const SeoMetas: FC<Information> = ({ PageTitle, PageDescription, PageImage }) =>
   </>
 );
 
-const OgpMetas: FC<Information> = ({ PageTitle, PageDescription, PageImage }) => (
+const OgpMetas: FC<LayoutInformation> = ({ PageTitle, PageDescription, PageImage }) => (
   <>
     <meta property="og:title" content={PageTitle} />
     <meta property="og:description" content={PageDescription} />
@@ -46,7 +34,7 @@ const OgpMetas: FC<Information> = ({ PageTitle, PageDescription, PageImage }) =>
   </>
 );
 
-const TwitterMetas: FC<Information> = ({ PageTitle, PageDescription, PageImage }) => (
+const TwitterMetas: FC<LayoutInformation> = ({ PageTitle, PageDescription, PageImage }) => (
   <>
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="" />
@@ -56,7 +44,12 @@ const TwitterMetas: FC<Information> = ({ PageTitle, PageDescription, PageImage }
   </>
 );
 
-const Layout: FC<Props> = ({ PageTitle, children, PageDescription = DefaultDescription, PageImage = DefaultImage }) => (
+const Layout: FC<LayoutProps> = ({
+  PageTitle,
+  children,
+  PageDescription = DefaultDescription,
+  PageImage = DefaultImage,
+}) => (
   <>
     <Head>
       <title>{PageTitle}</title>
@@ -66,20 +59,13 @@ const Layout: FC<Props> = ({ PageTitle, children, PageDescription = DefaultDescr
       <TwitterMetas PageTitle={PageTitle} PageDescription={PageDescription} PageImage={PageImage} />
     </Head>
     <main>
-      <div>
-        <Header />
-        <div className="mt-20 min-h-[calc(100vh_-_5rem)]">
-          <Side>{children}</Side>
-        </div>
+      <Header />
+      <div className="mt-20 min-h-[calc(100vh_-_5rem)]">
+        <Side>{children}</Side>
       </div>
       <Footer />
     </main>
   </>
 );
-
-Layout.defaultProps = {
-  PageDescription: DefaultDescription,
-  PageImage: DefaultImage,
-};
 
 export default Layout;
