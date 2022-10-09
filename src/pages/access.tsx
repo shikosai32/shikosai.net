@@ -16,11 +16,11 @@ const AccessPage: NextPage = () => (
         />
       </div>
     </div>
-    <div className="mt-10 text-center font-montserrat">
-      <p className="text-4xl md:text-6xl">- ADDRESS -</p>
-      <p className="mt-5 text-2xl md:text-3xl">〒312-8508</p>
-      <p className="text-2xl md:text-3xl">866 Nakane Hitachinaka Ibaraki, Japan</p>
-      <p className="text-2xl md:text-3xl">TEL 029-272-5201</p>
+    <h2 className="semi-bold mt-10 text-center font-noto-serif-jp text-3xl md:text-5xl">- ADDRESS -</h2>
+    <div className="mt-5 text-center font-noto-serif-jp text-2xl md:text-3xl">
+      <p>〒312-8508</p>
+      <p>866 Nakane Hitachinaka Ibaraki, Japan</p>
+      <p>TEL 029-272-5201</p>
     </div>
   </Layout>
 );
