@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import Layout from "~/components/Layout";
+import Layout from "~/components/Layout/Layout";
 import Chairman from "~/components/staff/Chairman";
 import Departments from "~/components/staff/Departments";
 
