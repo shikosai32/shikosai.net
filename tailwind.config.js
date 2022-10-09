@@ -6,6 +6,12 @@ module.exports = {
         montserrat: ["Montserrat"],
         "noto-serif-jp": ["Noto Serif JP"],
         "roboto-serif": ["Roboto Serif"],
+        "dela-gothic-one": ["Dela Gothic One"],
+      },
+      colors: {
+        primary: "#B9060D",
+        secondary: "#4C6B8C",
+        success: "#4ECB71",
       },
       keyframes: {
         display: {
