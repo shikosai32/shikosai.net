@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import type { FC } from "react";
-import { FiTwitter, FiInstagram, FiShare2 } from "react-icons/fi";
+import { FiTwitter, FiShare2 } from "react-icons/fi";
+import { FaLine } from "react-icons/fa";
 import type { SideProps } from "./type/model";
 
 const ScrollTop = () => {
@@ -30,21 +31,41 @@ const Right: FC = () => {
         <p className="w-[5vw] rotate-90 text-xl ">SHARE:</p>
         <ul className="mt-12 flex list-none flex-col items-center space-y-3">
           <li>
-            <a href="https://twitter.com/" rel="noopener noreferrer">
+            <a
+              href="https://twitter.com/share?text=茨香祭について確認しよう!%0D%0A&url=https://32.shikosai.net&hashtags=shikosai32"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <FiTwitter size="min(3vw,55px)" color="black" className="stroke-1" />
             </a>
           </li>
 
           <li>
-            <a href="https://instagram.com/" rel="noopener noreferrer">
-              <FiInstagram size="min(3vw,50px)" color="black" className="stroke-1" />
+            <a
+              href="http://line.me/R/msg/text/?茨香祭について確認しよう!%0D%0Ahttps://32.shikosai.net"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <FaLine size="min(3vw,50px)" color="black" className="stroke-1" />
             </a>
           </li>
 
           <li>
-            <a href="share" rel="noopener noreferrer">
-              <FiShare2 size="min(3vw,50px)" color="black" className="stroke-1" />
-            </a>
+            <FiShare2
+              size="min(3vw,50px)"
+              color="black"
+              className="stroke-1"
+              onClick={(event) => {
+                event.preventDefault();
+                if (navigator.share) {
+                  navigator.share({
+                    title: "第32回茨香祭公式ホームページ - 茨城工業高等専門学校",
+                    text: "茨香祭について確認しよう",
+                    url: "https://32.shikosai.net",
+                  });
+                }
+              }}
+            />
           </li>
         </ul>
       </div>
