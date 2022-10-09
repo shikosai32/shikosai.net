@@ -55,8 +55,8 @@ const Flow: FC = () => (
             <img src={`/image/white/${flowItem.title}.png`} alt={flowItem.title} width="50%" height="50%" />
           </div>
           <div className="flex flex-col items-center justify-center text-center font-dela-gothic-one text-white">
-            <span className="text-3xl">{flowItem.subtitle}</span>
-            <span className="text-2xl">{flowItem.description}</span>
+            <span className="text-xl lg:text-3xl">{flowItem.subtitle}</span>
+            <span className="text-lg lg:text-2xl">{flowItem.description}</span>
           </div>
         </FlowBox>
         <div>
