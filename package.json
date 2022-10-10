@@ -62,7 +62,7 @@
     "sass": "1.55.0",
     "sass-loader": "13.1.0",
     "storybook": "6.5.12",
-    "storybook-addon-next-router": "4.0.0",
+    "storybook-addon-next-router": "4.0.1",
     "style-loader": "3.3.1",
     "tailwindcss": "3.1.8",
     "tsconfig-paths-webpack-plugin": "4.0.0",
