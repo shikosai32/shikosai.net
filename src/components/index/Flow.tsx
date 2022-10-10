@@ -26,7 +26,7 @@ const FlowBox: FC<{ className: string; children: ReactNode; type: "timetable" | 
   children,
   type,
 }) => (
-  <div className="relative">
+  <div className="relative w-full">
     <button
       type="button"
       onClick={() => {
@@ -34,7 +34,7 @@ const FlowBox: FC<{ className: string; children: ReactNode; type: "timetable" | 
       }}
     >
       <div
-        className={`h-[146px] rounded-lg ${className} transition hover:-translate-y-1 hover:-translate-x-1 active:translate-y-3 active:translate-x-3`}
+        className={`h-[146px] w-full rounded-lg ${className} transition hover:-translate-y-1 hover:-translate-x-1 active:translate-y-3 active:translate-x-3`}
       >
         {children}
       </div>
