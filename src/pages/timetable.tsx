@@ -18,7 +18,7 @@ const TimeTable: NextPage = () => {
       setHeightSize(2.5);
     } else {
       setData(timetableData.in);
-      setHeightSize(3);
+      setHeightSize(3.5);
     }
   }, [stage]);
 

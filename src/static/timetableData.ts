@@ -140,7 +140,7 @@ const timetableData: Data = {
       },
       {
         eventTitle: "mi media maranja",
-        description: "",
+        description: "あなたがいなきゃ、私は完成しない",
         start: "10:00",
         end: "10:20",
         time: 2,
@@ -155,8 +155,8 @@ const timetableData: Data = {
         isBlank: true,
       },
       {
-        eventTitle: "ジェリコ",
-        description: "",
+        eventTitle: "ｼﾞｪﾘｺ",
+        description: "女々しい彼の思い出はあの日のｼﾞｪﾘｺでした",
         start: "10:30",
         end: "10:50",
         time: 2,
@@ -172,7 +172,7 @@ const timetableData: Data = {
       },
       {
         eventTitle: "ガサ入れプランクトン",
-        description: "",
+        description: "あなたの心をガサ入れ！YOASOBI等のバンド演奏！",
         start: "11:00",
         end: "11:20",
         time: 2,
@@ -188,7 +188,7 @@ const timetableData: Data = {
       },
       {
         eventTitle: "Crux.wav",
-        description: "",
+        description: "僕たちと一緒に、リミッター外しちゃえ。",
         start: "11:30",
         end: "11:50",
         time: 2,
@@ -204,7 +204,7 @@ const timetableData: Data = {
       },
       {
         eventTitle: "デジタルアーツ同好会",
-        description: "",
+        description: "ステージ上でバーチャルライブを行います！",
         start: "12:30",
         end: "13:00",
         time: 3,
@@ -220,7 +220,7 @@ const timetableData: Data = {
       },
       {
         eventTitle: "ダンス同好会",
-        description: "",
+        description: "様々なジャンルの曲を踊ります！",
         start: "13:10",
         end: "13:30",
         time: 2,
@@ -235,8 +235,8 @@ const timetableData: Data = {
         isBlank: true,
       },
       {
-        eventTitle: "酒井晴渚さん",
-        description: "",
+        eventTitle: "AEINZ",
+        description: "作詞作曲、演奏と歌唱。全部私がやります！",
         start: "13:40",
         end: "13:45",
         time: 0.5,
@@ -251,8 +251,8 @@ const timetableData: Data = {
         isBlank: true,
       },
       {
-        eventTitle: "ふかづめ",
-        description: "",
+        eventTitle: "ふかずめ",
+        description: "Let me make somme noice.",
         start: "13:50",
         end: "14:05",
         time: 1.5,
@@ -268,7 +268,7 @@ const timetableData: Data = {
       },
       {
         eventTitle: "Tusq",
-        description: "",
+        description: "DJとドラムが融合したライブになります",
         start: "14:15",
         end: "14:40",
         time: 2.5,
@@ -283,8 +283,8 @@ const timetableData: Data = {
         isBlank: true,
       },
       {
-        eventTitle: "山本燎哉さん",
-        description: "",
+        eventTitle: "燎哉の弾き語り",
+        description: "有名な曲3割、自分が好きな曲7割。",
         start: "14:50",
         end: "15:20",
         time: 3,
@@ -300,7 +300,7 @@ const timetableData: Data = {
       },
       {
         eventTitle: "OHMI",
-        description: "",
+        description: "曲と演出がリンクしたDJパフォーマンス",
         start: "15:30",
         end: "15:50",
         time: 2,
@@ -310,7 +310,7 @@ const timetableData: Data = {
     day2: [
       {
         eventTitle: "ダンス同好会",
-        description: "",
+        description: "様々なジャンルの曲を踊ります！",
         start: "9:00",
         end: "9:20",
         time: 2,
@@ -326,7 +326,7 @@ const timetableData: Data = {
       },
       {
         eventTitle: "OHMI",
-        description: "",
+        description: "曲と演出がリンクしたDJパフォーマンス",
         start: "9:30",
         end: "9:50",
         time: 2,
@@ -341,8 +341,8 @@ const timetableData: Data = {
         isBlank: true,
       },
       {
-        eventTitle: "山本燎哉さん",
-        description: "",
+        eventTitle: "燎哉の弾き語り",
+        description: "有名な曲3割、自分が好きな曲7割。",
         start: "10:00",
         end: "10:30",
         time: 3,
@@ -358,7 +358,7 @@ const timetableData: Data = {
       },
       {
         eventTitle: "Tusq",
-        description: "",
+        description: "DJとドラムが融合したライブになります。",
         start: "10:40",
         end: "11:05",
         time: 2.5,
@@ -373,8 +373,8 @@ const timetableData: Data = {
         isBlank: true,
       },
       {
-        eventTitle: "ふかづめ",
-        description: "",
+        eventTitle: "ふかずめ",
+        description: "Let me make some noise.",
         start: "11:15",
         end: "11:30",
         time: 1.5,
@@ -389,8 +389,8 @@ const timetableData: Data = {
         isBlank: true,
       },
       {
-        eventTitle: "林昇吾さん",
-        description: "",
+        eventTitle: "田山と林",
+        description: "みんなが知ってる邦ロックやります。",
         start: "11:40",
         end: "12:00",
         time: 2,
@@ -406,7 +406,7 @@ const timetableData: Data = {
       },
       {
         eventTitle: "ガサ入れプランクトン",
-        description: "",
+        description: "あなたの心をガサ入れ！YOASOBI等のバンド演奏！",
         start: "12:30",
         end: "12:50",
         time: 2,
@@ -422,7 +422,7 @@ const timetableData: Data = {
       },
       {
         eventTitle: "Crux.wav",
-        description: "",
+        description: "僕たちと一緒に、リミッター外しちゃえ。",
         start: "13:00",
         end: "13:20",
         time: 2,
@@ -438,7 +438,7 @@ const timetableData: Data = {
       },
       {
         eventTitle: "リサイクル",
-        description: "",
+        description: "バンド演奏します！",
         start: "13:30",
         end: "13:50",
         time: 2,

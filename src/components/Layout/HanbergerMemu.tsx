@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { NextPage } from "next";
-import { FiTwitter, FiInstagram, FiShare2 } from "react-icons/fi";
+import type { NextPage } from "next";
+import { FiTwitter, FiShare2 } from "react-icons/fi";
 import { Spin as Button } from "hamburger-react";
 import Link from "next/link";
+import { FaLine } from "react-icons/fa";
 
 const Menu: NextPage = () => {
   const [isOpen, setOpen] = useState(false);
@@ -70,26 +71,38 @@ const Menu: NextPage = () => {
                 SHARE
               </p>
               <a
-                href="https://twitter.com/"
+                href="https://twitter.com/share?text=茨香祭について確認しよう!%0D%0A&url=https://32.shikosai.net&hashtags=shikosai32"
                 rel="noopener noreferrer"
+                target="_blank"
                 className={`${isOpen ? "" : "translate-y-96"} transition-all delay-[125ms] duration-500 ease-in`}
               >
                 <FiTwitter size="48px" color="white" className="stroke-1" />
               </a>
               <a
-                href="https://instagram.com/"
+                href="http://line.me/R/msg/text/?茨香祭について確認しよう!%0D%0Ahttps://32.shikosai.net"
                 rel="noopener noreferrer"
+                target="_blank"
                 className={`${isOpen ? "" : "translate-y-96"} transition-all delay-[150ms] duration-500 ease-in`}
               >
-                <FiInstagram size="48px" color="white" className="stroke-1" />
+                <FaLine size="48px" color="white" className="stroke-1" />
               </a>
-              <a
-                href="share"
-                rel="noopener noreferrer"
-                className={`${isOpen ? "" : "translate-y-96"} transition-all delay-[175ms] duration-500 ease-in`}
-              >
-                <FiShare2 size="48px" color="white" className="stroke-1" />
-              </a>
+              <div className={`${isOpen ? "" : "translate-y-96"} transition-all delay-[175ms] duration-500 ease-in`}>
+                <FiShare2
+                  size="48px"
+                  color="white"
+                  className="stroke-1"
+                  onClick={(event) => {
+                    event.preventDefault();
+                    if (navigator.share) {
+                      navigator.share({
+                        title: "第32回茨香祭公式ホームページ - 茨城工業高等専門学校",
+                        text: "茨香祭について確認しよう",
+                        url: "https://32.shikosai.net",
+                      });
+                    }
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
