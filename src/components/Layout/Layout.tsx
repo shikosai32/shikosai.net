@@ -62,7 +62,7 @@ const Layout: FC<LayoutProps> = ({
     </Head>
     <main>
       <Header />
-      <div className="mt-20 min-h-[calc(100vh_-_5rem)]">
+      <div className="min-h-full pt-20">
         <Side>{children}</Side>
       </div>
       <Footer />
