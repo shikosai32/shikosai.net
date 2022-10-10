@@ -252,7 +252,7 @@ const timetableData: Data = {
       },
       {
         eventTitle: "ふかずめ",
-        description: "Let me make somme noice.",
+        description: "Let me make some noice.",
         start: "13:50",
         end: "14:05",
         time: 1.5,
