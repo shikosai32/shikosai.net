@@ -7,43 +7,32 @@ export type TableItemProps = {
   // そのまま描画するのでhh:mmで統一
   start: string;
   end: string;
-  // 10分単位でのイベント時間
-  // 1時間 → 6 を指定
-  time: number;
-  isBlank: boolean;
 };
 
 type Props = TableItemProps & {
-  // 10分あたりの高さ(rem)
-  heightSize: number;
+  color: "primary" | "secondary";
 };
 
 const TableItem: FC<Props> = (props) => {
-  const { eventTitle, description, start, end, time, isBlank, heightSize } = props;
-
-  if (isBlank)
-    return (
-      <div
-        style={{
-          height: `${heightSize * time + 0.5 * (time - 1)}rem`,
-        }}
-        className="mb-2"
-      />
-    );
+  const { eventTitle, description, start, end, color } = props;
 
   return (
     <div
-      style={{
-        minHeight: `${heightSize * time + 0.5 * (time - 1)}rem`,
-        height: "auto",
-      }}
-      className="relative mb-2 rounded-3xl bg-white p-4 font-roboto-serif shadow-2xl"
+      className={`relative my-10 rounded-3xl border-4 bg-white lg:my-6 lg:border-2 ${
+        color === "primary" ? "border-primary" : "border-secondary"
+      }`}
     >
-      <h3 className="text-2xl">{eventTitle}</h3>
-      <p className="mb-6 lg:mb-0">{description}</p>
-      <p className="absolute right-4 bottom-4 text-right text-sm text-[#707070] lg:right-6	lg:bottom-6">
-        {start} ~ {end}
-      </p>
+      <p className="px-4 pt-6 pb-4 text-center font-noto-serif-jp lg:pt-4">{description}</p>
+      <div
+        className={`absolute -top-8 right-0 left-0 mx-auto flex w-[85%] flex-col text-center text-white lg:-top-4 lg:flex-row lg:justify-around ${
+          color === "primary" ? "bg-primary" : "bg-secondary"
+        }`}
+      >
+        <p className="font-montserrat">
+          {start} ~ {end}
+        </p>
+        <h3 className="font-noto-serif-jp">{eventTitle}</h3>
+      </div>
     </div>
   );
 };
