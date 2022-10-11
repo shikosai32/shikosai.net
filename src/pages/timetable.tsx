@@ -40,8 +40,12 @@ const TimeTable: NextPage = () => {
             onChange={(e) => setDay(e.target.value)}
             defaultValue="1"
           >
-            <option value="1" label="10/22(Sat.)" />
-            <option value="2" label="10/23(Sun.)" />
+            <option value="1" label="10/22(Sat.)">
+              10/22(Sat.)
+            </option>
+            <option value="2" label="10/23(Sun.)">
+              10/23(Sun.)
+            </option>
           </select>
         </div>
       </div>
@@ -51,8 +55,12 @@ const TimeTable: NextPage = () => {
           onChange={(e) => setStage(e.target.value)}
           defaultValue="out"
         >
-          <option value="out" label="Outdoor" />
-          <option value="in" label="Indoor" />
+          <option value="out" label="Outdoor">
+            Outdoor
+          </option>
+          <option value="in" label="Indoor">
+            Indoor
+          </option>
         </select>
       </div>
       <div className="text-center font-montserrat">
@@ -64,11 +72,15 @@ const TimeTable: NextPage = () => {
         <div className="hidden items-start justify-evenly md:flex">
           <div className="relative w-2/5">
             <img className="w-full" src="/image/frame.svg" alt="flame" />
-            <p className="absolute right-0 left-0 top-5 text-center text-xl lg:text-2xl">Outdoor Stage</p>
+            <p className="absolute right-0 left-0 top-3 text-center text-xl lg:top-5 lg:text-3xl xl:text-4xl">
+              Outdoor Stage
+            </p>
           </div>
           <div className="relative w-2/5">
             <img className="w-full" src="/image/frame.svg" alt="flame" />
-            <p className="absolute right-0 left-0 top-5 text-center text-xl lg:text-2xl">Indoor Stage</p>
+            <p className="absolute right-0 left-0 top-3 text-center text-xl lg:top-5 lg:text-3xl xl:text-4xl">
+              Indoor Stage
+            </p>
           </div>
         </div>
         <div className="mx-auto w-4/5 md:hidden">

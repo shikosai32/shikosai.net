@@ -24,7 +24,7 @@ const TableItem: FC<Props> = (props) => {
     >
       <p className="px-4 pt-6 pb-4 text-center font-noto-serif-jp lg:pt-4">{description}</p>
       <div
-        className={`absolute -top-8 right-0 left-0 mx-auto flex w-[85%] flex-col text-center text-white lg:-top-4 lg:flex-row lg:justify-around ${
+        className={`absolute -top-8 right-0 left-0 mx-auto flex w-[85%] flex-col rounded-md text-center text-white lg:-top-4 lg:flex-row lg:justify-around lg:rounded-none ${
           color === "primary" ? "bg-primary" : "bg-secondary"
         }`}
       >
