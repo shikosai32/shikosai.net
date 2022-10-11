@@ -26,7 +26,14 @@ const timetableData: Data = {
           end: "12:00",
         },
       ],
-      [{ eventTitle: "吹奏楽コンサート", description: "", start: "12:00", end: "13:00" }],
+      [
+        {
+          eventTitle: "吹奏楽コンサート",
+          description: "野外ステージで演奏します！皆さんおなじみのあの曲も...",
+          start: "12:00",
+          end: "13:00",
+        },
+      ],
       [
         {
           eventTitle: "クラス対抗クイズ大会決勝",
