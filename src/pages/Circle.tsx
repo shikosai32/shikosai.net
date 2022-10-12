@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import CardModal from "~/components/UI/CardModal";
-import Layout from "~/components/Layout";
+import Layout from "~/components/Layout/Layout";
 import Link from "next/link";
 import circleData from "~/static/circleData";
 
