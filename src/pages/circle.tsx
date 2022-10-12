@@ -5,8 +5,8 @@ import Layout from "~/components/Layout/Layout";
 import Link from "next/link";
 import circleData from "~/static/circleData";
 
-const circle: NextPage = () => (
-  <Layout PageTitle="Circle">
+const Circle: NextPage = () => (
+  <Layout PageTitle="Circle - shikosai32">
     <div className="font-roboto_serif relative flex h-full w-full flex-col items-center justify-around">
       <div className="w-[calc(100%_-_5px)] md:w-full">
         <div className="text-center">
@@ -150,4 +150,5 @@ const circle: NextPage = () => (
     </div>
   </Layout>
 );
-export default circle;
+
+export default Circle;
