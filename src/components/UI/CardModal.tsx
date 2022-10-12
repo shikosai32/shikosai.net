@@ -1,6 +1,4 @@
-import type { FC } from "react";
-import { useState } from "react";
-import Image from "next/image";
+import { FC, useState } from "react";
 import Modal from "react-modal";
 
 type Props = {
@@ -51,7 +49,7 @@ const CardModal: FC<Props> = (props) => {
         <p className="border-b-2 text-center text-sm">{org}</p>
         {/* 画像 */}
         <figure className="mb-0 inline-block  w-1/3 text-left md:block md:w-full">
-          <Image src={imgPath} objectFit="contain" width="100%" height="100%" layout="responsive" className="" alt="" />
+          <img src={imgPath} width="100%" height="100%" alt="" />
         </figure>
         <div className="mb-0 inline-block h-auto w-2/3 text-left align-top md:block md:w-full">
           {/* サークル名 */}
@@ -79,15 +77,7 @@ const CardModal: FC<Props> = (props) => {
                 <p className="text-sm">{about}</p>
                 <p className="py-[2%]"> </p>
                 <p className="pl-[2%] text-sm">{placement}</p>
-                <Image
-                  src={map}
-                  objectFit="contain"
-                  width="100%"
-                  height="100%"
-                  layout="responsive"
-                  className=""
-                  alt=""
-                />
+                <img src={map} width="100%" height="100%" alt="" />
               </div>
             </Modal>
           </div>

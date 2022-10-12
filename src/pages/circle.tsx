@@ -1,8 +1,7 @@
 import type { NextPage } from "next";
-import Image from "next/image";
+import Link from "next/link";
 import CardModal from "~/components/UI/CardModal";
 import Layout from "~/components/Layout/Layout";
-import Link from "next/link";
 import circleData from "~/static/circleData";
 
 const Circle: NextPage = () => (
@@ -10,7 +9,6 @@ const Circle: NextPage = () => (
     <div className="font-roboto_serif relative flex h-full w-full flex-col items-center justify-around">
       <div className="w-[calc(100%_-_5px)] md:w-full">
         <div className="text-center">
-          <Image src="/image/circle/172_20220516124758.png" width={125} height={50} alt="" className="content-center" />
           <p className="text-center">JUMP TO</p>
           <ul className="flex flex-wrap">
             {circleData.classify.map((v) => (
