@@ -117,8 +117,7 @@ const circleData: Data = {
         mapImagePth: "/image/circle/map/8.png",
       },
       {
-        circleTitle: "3M2",
-        // TODO:サークル名 要確認
+        circleTitle: "イカした射的で遊んでみなイカ!?",
         organization: "3M2",
         placement: "8号館1階 3M2教室",
         circleImagePth: "/image/circle/circle/3M2.png",
