@@ -1,12 +1,11 @@
-import Link from "next/link";
 import { FC } from "react";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import Card from "../Card";
 
 const Caution: FC = () => (
   <div className="relative font-noto-serif-jp">
-    <h2 className="text-center text-3xl font-semibold uppercase md:text-6xl">Caution</h2>
-    <div className="absolute top-20 right-1/4 hidden h-[2px] w-1/2 bg-black before:absolute before:top-[-3px] before:-left-1 before:h-2 before:w-2 before:rounded-full before:bg-black before:content-[''] after:absolute after:top-[-3px] after:-right-1 after:h-2 after:w-2 after:rounded-full after:bg-black after:content-[''] md:block" />
+    <h2 className="text-center font-montserrat text-3xl font-semibold uppercase md:text-6xl">Cautions</h2>
+    <div className="absolute top-12 right-0 left-0 mx-auto h-[2px] w-4/5 bg-black before:absolute before:top-[-3px] before:-left-1 before:h-2 before:w-2 before:rounded-full before:bg-black before:content-[''] after:absolute after:top-[-3px] after:-right-1 after:h-2 after:w-2 after:rounded-full after:bg-black after:content-[''] md:top-20" />
     <div className="mt-4 flex justify-center md:mt-12">
       <Card className="w-5/6 p-4 md:py-12 md:px-8 md:text-xl">
         <p>
@@ -33,14 +32,16 @@ const Caution: FC = () => (
             <figure>
               <BsFillCheckCircleFill size={25} className="hidden text-success md:block" />
             </figure>
+            <li className="list-disc line-through md:list-none">
+              当日ご入場する際には、予め入場予約をして頂く必要があります。また、お申込多数となった場合は申込受付を終了する場合がございます。
+            </li>
+          </div>
+          <div className="flex items-center md:space-x-4">
+            <figure>
+              <BsFillCheckCircleFill size={25} className="hidden text-success md:block" />
+            </figure>
             <li className="list-disc md:list-none">
-              当日ご入場なさる際には、予め入場予約をして頂く必要があります。お手数をおかけしますが、
-              <Link href="https://forms.gle/7SfzGJCLVANwFXY46">
-                <a target="_blank" className="text-secondary underline visited:text-primary">
-                  こちらのリンク
-                </a>
-              </Link>
-              よりフォームにご回答願います。 また、お申込多数となった場合、申込受付を終了する場合がございます。
+              当日ご入場する際に必要な入場予約は、お申込多数により終了しました。ありがとうございました。
             </li>
           </div>
           <div className="flex items-center md:space-x-4">
