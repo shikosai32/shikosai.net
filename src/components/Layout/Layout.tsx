@@ -1,28 +1,13 @@
-import type { FC, ReactNode } from "react";
+import type { FC } from "react";
 import Head from "next/head";
+import Header from "~/components/Layout/Header";
+import Footer from "~/components/Layout/Footer";
+import Side from "~/components/Layout/Side";
+import type { LayoutInformation, LayoutProps } from "./type/model";
 
-import Header from "~/components/Header";
-import Footer from "~/components/Footer";
-import Side from "~/components/Side";
-import BackContent from "~/components/BackContent";
-
-interface Information {
-  PageTitle: string;
-  PageDescription: string;
-  PageImage: string;
-}
-
-type Props = {
-  PageTitle: string;
-  PageDescription?: string;
-  PageImage?: string;
-  children: ReactNode;
-  BackContents?: boolean;
-};
-
-const DefaultDescription = "";
-const DefaultImage = "";
-const DefaultBackContents = true;
+const DefaultDescription =
+  "第32回茨香祭の公式ホームページです。サークルなどの各種情報を掲載しています。どうぞご利用ください！";
+const DefaultImage = "https://32.shikosai.net/image/ogp/ogp_image.png";
 
 const Metas: FC = () => (
   <>
@@ -32,7 +17,7 @@ const Metas: FC = () => (
   </>
 );
 
-const SeoMetas: FC<Information> = ({ PageTitle, PageDescription, PageImage }) => (
+const SeoMetas: FC<LayoutInformation> = ({ PageTitle, PageDescription, PageImage }) => (
   <>
     <meta name="name" content={PageTitle} />
     <meta name="image" content={PageImage} />
@@ -40,17 +25,18 @@ const SeoMetas: FC<Information> = ({ PageTitle, PageDescription, PageImage }) =>
   </>
 );
 
-const OgpMetas: FC<Information> = ({ PageTitle, PageDescription, PageImage }) => (
+const OgpMetas: FC<LayoutInformation> = ({ PageTitle, PageDescription, PageImage }) => (
   <>
     <meta property="og:title" content={PageTitle} />
     <meta property="og:description" content={PageDescription} />
+    <meta property="og:type" content="website" />
     <meta property="og:image" content={PageImage} />
     <meta property="og:image:alt" content="" />
     <meta property="og:site_name" content="" />
   </>
 );
 
-const TwitterMetas: FC<Information> = ({ PageTitle, PageDescription, PageImage }) => (
+const TwitterMetas: FC<LayoutInformation> = ({ PageTitle, PageDescription, PageImage }) => (
   <>
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="" />
@@ -60,12 +46,11 @@ const TwitterMetas: FC<Information> = ({ PageTitle, PageDescription, PageImage }
   </>
 );
 
-const Layout: FC<Props> = ({
+const Layout: FC<LayoutProps> = ({
   PageTitle,
   children,
   PageDescription = DefaultDescription,
   PageImage = DefaultImage,
-  BackContents = DefaultBackContents,
 }) => (
   <>
     <Head>
@@ -76,22 +61,13 @@ const Layout: FC<Props> = ({
       <TwitterMetas PageTitle={PageTitle} PageDescription={PageDescription} PageImage={PageImage} />
     </Head>
     <main>
-      <div>
-        <Header />
-        <div className="mt-20 min-h-[calc(100vh_-_5rem)]">
-          <BackContent Contents={BackContents} />
-          <Side>{children}</Side>
-        </div>
+      <Header />
+      <div className="min-h-full pt-20">
+        <Side>{children}</Side>
       </div>
       <Footer />
     </main>
   </>
 );
-
-Layout.defaultProps = {
-  PageDescription: DefaultDescription,
-  PageImage: DefaultImage,
-  BackContents: DefaultBackContents,
-};
 
 export default Layout;
