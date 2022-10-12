@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
 import Layout from "~/components/Layout/Layout";
+import Info from "~/components/index/Info";
 import Flow from "~/components/index/Flow";
 import Caution from "~/components/index/Caution";
 
@@ -49,10 +50,13 @@ const Home: NextPage = () => {
           <CountDown />
         </div>
       </div>
+      <div className="md:mt-20">
+        <Info />
+      </div>
       <div className="mt-24 hidden w-full md:block">
         <Flow />
       </div>
-      <div className="mt-24 mb-6 w-full">
+      <div className="mt-10 mb-6 w-full md:mt-24">
         <Caution />
       </div>
     </Layout>
