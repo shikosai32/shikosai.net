@@ -7,7 +7,7 @@ import circleData from "~/static/circleData";
 
 const circle: NextPage = () => (
   <Layout PageTitle="Circle">
-    <div className="relative flex h-full w-full flex-col items-center justify-around font-roboto_serif">
+    <div className="font-roboto_serif relative flex h-full w-full flex-col items-center justify-around">
       <div className="w-[calc(100%_-_5px)] md:w-full">
         <div className="text-center">
           <Image src="/image/circle/172_20220516124758.png" width={125} height={50} alt="" className="content-center" />
