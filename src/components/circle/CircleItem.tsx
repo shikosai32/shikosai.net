@@ -22,13 +22,13 @@ const modalStyles = {
   },
 
   content: {
-    top: "50%",
+    top: "55%",
     left: "50%",
     right: "auto",
     bottom: "auto",
     marginRight: "-50%",
-    width: "80%",
-    height: "75%",
+    width: "90%",
+    height: "80%",
     transform: "translate(-50%, -50%)",
   },
 };
@@ -47,7 +47,7 @@ const CardModal: FC<CircleItemProps> = (props) => {
   const descriptionContent = description.split(urlPattern);
 
   return (
-    <div className="my-4 w-full font-noto-serif-jp md:mx-[2.5%] md:w-[45%] lg:mx-[1.5%] lg:w-[30%]">
+    <div className="mx-auto my-4 w-[95%] border-2 border-black font-noto-serif-jp md:mx-[2.5%] md:w-[45%] lg:mx-[1.5%] lg:w-[30%]">
       <div className="flex h-44 items-start justify-center bg-gray-300">
         {circleImgPath ? (
           <img className="pt-auto max-h-44" src={circleImgPath} alt={circleName} />

@@ -11,7 +11,7 @@ const Circle: NextPage = () => {
     <Layout PageTitle="Circle - shikosai32">
       <div className="font-roboto_serif relative h-full w-full pt-10">
         <img src="/image/black/circle.png" className="mx-auto mb-4 h-10 md:h-12 lg:h-20" alt="Circle" />
-        <div className="w-[calc(100%_-_5px)] md:w-full">
+        <div className="mx-auto w-[calc(100%_-_5px)] md:w-full">
           <div className="text-center">
             <p className="font-montserrat">Select ▼</p>
             <select
