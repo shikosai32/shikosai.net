@@ -9,7 +9,7 @@ const Circle: NextPage = () => {
 
   return (
     <Layout PageTitle="Circle - shikosai32">
-      <div className="font-roboto_serif relative flex h-full w-full flex-col items-center justify-around pt-10">
+      <div className="font-roboto_serif relative h-full w-full pt-10">
         <img src="/image/black/circle.png" className="mx-auto mb-4 h-10 md:h-12 lg:h-20" alt="Circle" />
         <div className="w-[calc(100%_-_5px)] md:w-full">
           <div className="text-center">
@@ -30,17 +30,17 @@ const Circle: NextPage = () => {
           <h2 className="my-6 border-y-2 border-black	py-2 text-center font-noto-serif-jp text-3xl font-semibold">
             {circleData.classify[circleIndex]}
           </h2>
-          <div className="flex w-full flex-wrap pb-[5%]">
+          <div className="mb-10 flex w-full flex-wrap">
             {circleData.contents[circleIndex].map((v) => (
               <CardModal
-                key={v.organization}
-                organization={v.organization}
-                circleTitle={v.circleTitle}
-                placement={v.placement}
-                circleImagePth={v.circleImagePth}
+                key={v.orgName}
+                orgName={v.orgName}
+                circleName={v.circleName}
+                place={v.place}
                 description={v.description}
                 aboutCircle={v.aboutCircle}
-                mapImagePth={v.mapImagePth}
+                circleImgPath={v.circleImgPath}
+                mapImgPath={v.mapImgPath}
               />
             ))}
           </div>
