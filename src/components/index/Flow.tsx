@@ -44,7 +44,9 @@ const FlowBox: FC<{ className: string; children: ReactNode; type: "timetable" | 
 );
 
 const Flow: FC = () => (
-  <>
+  <div className="relative">
+    <h2 className="my-20 text-center font-montserrat text-3xl font-semibold uppercase md:text-6xl">Flows</h2>
+    <div className="absolute top-20 right-0 left-0 mx-auto hidden h-[2px] w-4/5 bg-black before:absolute before:top-[-3px] before:-left-1 before:h-2 before:w-2 before:rounded-full before:bg-black before:content-[''] after:absolute after:top-[-3px] after:-right-1 after:h-2 after:w-2 after:rounded-full after:bg-black after:content-[''] md:block" />
     {flowItems.map((flowItem, index) => (
       <div key={flowItem.id} className="relative">
         <FlowBox
@@ -68,7 +70,7 @@ const Flow: FC = () => (
         </div>
       </div>
     ))}
-  </>
+  </div>
 );
 
 export default Flow;
