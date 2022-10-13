@@ -1,0 +1,5 @@
+.text_border {
+  text-shadow: 0 1.5px 0 theme("colors.black"), 1.5px 0 0 theme("colors.black"), 0 -1.5px 0 theme("colors.black"),
+    -1.5px 0 0 theme("colors.black"), 1.5px 1.5px 0 theme("colors.black"), -1.5px 1.5px 0 theme("colors.black"),
+    1.5px -1.5px 0 theme("colors.black"), -1.5px -1.5px 0 theme("colors.black");
+}
