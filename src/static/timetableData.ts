@@ -55,7 +55,7 @@ const timetableData: Data = {
     in: [
       [
         {
-          eventTitle: "mi media maranja",
+          eventTitle: "mi media naranja",
           description: "あなたがいなきゃ、私は完成しない",
           start: "10:00",
           end: "10:20",
