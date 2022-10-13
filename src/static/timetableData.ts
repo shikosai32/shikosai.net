@@ -69,7 +69,7 @@ const timetableData: Data = {
       ],
       [
         {
-          eventTitle: "ガサ入れプランクトン",
+          eventTitle: "がさいれぷらんくとん",
           description: "あなたの心をガサ入れ！YOASOBI等のバンド演奏！",
           start: "11:00",
           end: "11:20",
@@ -211,7 +211,7 @@ const timetableData: Data = {
       ],
       [
         {
-          eventTitle: "ガサ入れプランクトン",
+          eventTitle: "がさいれぷらんくとん",
           description: "あなたの心をガサ入れ！YOASOBI等のバンド演奏！",
           start: "12:30",
           end: "12:50",
