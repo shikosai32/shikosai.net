@@ -137,7 +137,7 @@ const circleData: Data = {
       {
         circleName: "3C",
         orgName: "3C",
-        place: "8号館2階 3C教室",
+        place: "8号館1階 3C教室",
         circleImgPath: "/image/circle/circle/3C.jpg",
         description: "研究室をテーマとしたお化け屋敷。次に実験体になるのは貴方かも...？",
         aboutCircle: "",
