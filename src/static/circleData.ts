@@ -173,7 +173,7 @@ const circleData: Data = {
         circleImgPath: "/image/circle/circle/suisogaku.jpg",
         description: "野外ステージで演奏します！皆さんおなじみのあの曲も…",
         aboutCircle:
-          "毎週火～金の放課後にSCS室で活動しています。楽器を吹いたことがない方も大歓迎です！いつでも見学に来てください！",
+          "毎週月～金の放課後にSCS室で活動しています。楽器を吹いたことがない方も大歓迎です！いつでも見学に来てください！",
         mapImgPath: "/image/circle/map/suisogaku.png",
       },
       {
