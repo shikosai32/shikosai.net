@@ -70,7 +70,7 @@ const circleData: Data = {
         mapImgPath: "/image/circle/map/8.png",
       },
       {
-        circleName: "伊東モータース∞結び目サーキット",
+        circleName: "伊藤モータース∞結び目サーキット",
         orgName: "2-2",
         place: "8号館2階 2-2教室",
         circleImgPath: "/image/circle/circle/2-2.png",
