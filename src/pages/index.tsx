@@ -1,11 +1,15 @@
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
 import Layout from "~/components/Layout/Layout";
+import Info from "~/components/index/Info";
+import Flow from "~/components/index/Flow";
+import Caution from "~/components/index/Caution";
 
 const Home: NextPage = () => {
   const CountDown = dynamic(() => import("~/components/CountDown"), { ssr: false });
+
   return (
-    <Layout PageTitle="Hello World">
+    <Layout PageTitle="shikosai32">
       <div className="hidden w-full md:block">
         <div className="py-5">
           <div className="flex w-full items-end">
@@ -42,10 +46,18 @@ const Home: NextPage = () => {
             2022.10.23<span className="text-sm font-normal">(Sun.)</span>
           </p>
         </div>
-
         <div className="w-full pt-2">
           <CountDown />
         </div>
+      </div>
+      <div className="md:mt-20">
+        <Info />
+      </div>
+      <div className="mt-24 hidden w-full md:block">
+        <Flow />
+      </div>
+      <div className="mt-10 mb-6 w-full md:mt-24">
+        <Caution />
       </div>
     </Layout>
   );

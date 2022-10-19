@@ -24,7 +24,11 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Serif:wght@300&display=swap"
             rel="stylesheet"
           />
-          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300;1,600;1,800&display=swap"
+            rel="stylesheet"
+          />
+          <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet" />
         </Head>
         <body>

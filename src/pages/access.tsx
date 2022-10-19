@@ -2,8 +2,8 @@ import type { NextPage } from "next";
 import Layout from "~/components/Layout/Layout";
 
 const AccessPage: NextPage = () => (
-  <Layout PageTitle="Access">
-    <div className="relative mx-5 mt-[150px] border border-black md:mx-20 md:mt-[100px]">
+  <Layout PageTitle="Access - shikosai32">
+    <div className="relative mx-5 mt-16 border border-black md:mx-20 md:mt-[100px]">
       <div className="absolute top-[-20px] left-0 right-0 m-auto w-[100px] transform bg-white md:top-[-50px] md:w-[200px]">
         <img src="/image/black/access.png" alt="access" />
       </div>
@@ -16,11 +16,14 @@ const AccessPage: NextPage = () => (
         />
       </div>
     </div>
-    <h2 className="semi-bold mt-10 text-center font-noto-serif-jp text-3xl md:text-5xl">- ADDRESS -</h2>
-    <div className="mt-5 text-center font-noto-serif-jp text-2xl md:text-3xl">
-      <p>〒312-8508</p>
-      <p>866 Nakane Hitachinaka Ibaraki, Japan</p>
-      <p>TEL 029-272-5201</p>
+    <h2 className="semi-bold mt-10 text-center font-noto-serif-jp text-2xl md:text-3xl">- ADDRESS -</h2>
+    <div className="mt-5 text-center font-noto-serif-jp md:mb-10 md:text-3xl">
+      <p className="text-xl">〒312-8508</p>
+      <p className="mb-2 text-2xl">
+        866 Nakane Hitachinaka <br className="md:hidden" />
+        Ibaraki, Japan
+      </p>
+      <p className="text-lg">TEL 029-272-5201</p>
     </div>
   </Layout>
 );

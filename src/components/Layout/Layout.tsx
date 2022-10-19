@@ -5,8 +5,9 @@ import Footer from "~/components/Layout/Footer";
 import Side from "~/components/Layout/Side";
 import type { LayoutInformation, LayoutProps } from "./type/model";
 
-const DefaultDescription = "";
-const DefaultImage = "";
+const DefaultDescription =
+  "第32回茨香祭の公式ホームページです。サークルなどの各種情報を掲載しています。どうぞご利用ください！";
+const DefaultImage = "https://32.shikosai.net/image/ogp/ogp_image.png";
 
 const Metas: FC = () => (
   <>
@@ -56,20 +57,12 @@ const Layout: FC<LayoutProps> = ({
       <title>{PageTitle}</title>
       <Metas />
       <SeoMetas PageTitle={PageTitle} PageDescription={PageDescription} PageImage={PageImage} />
-      <OgpMetas
-        PageTitle="第32回茨香祭公式ホームページ - 茨城工業高等専門学校"
-        PageDescription="第32回茨香祭の公式ホームページです。サークルなどの各種情報を掲載しています。どうぞご利用ください！"
-        PageImage="https://32.shikosai.net/image/ogp/ogp_image.png"
-      />
-      <TwitterMetas
-        PageTitle="第32回茨香祭公式ホームページ - 茨城工業高等専門学校"
-        PageDescription="第32回茨香祭の公式ホームページです。サークルなどの各種情報を掲載しています。どうぞご利用ください！"
-        PageImage="https://32.shikosai.net/image/ogp/ogp_image.png"
-      />
+      <OgpMetas PageTitle={PageTitle} PageDescription={PageDescription} PageImage={PageImage} />
+      <TwitterMetas PageTitle={PageTitle} PageDescription={PageDescription} PageImage={PageImage} />
     </Head>
     <main>
       <Header />
-      <div className="mt-20 min-h-[calc(100vh_-_5rem)]">
+      <div className="min-h-full pt-20">
         <Side>{children}</Side>
       </div>
       <Footer />
