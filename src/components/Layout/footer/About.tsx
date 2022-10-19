@@ -1,7 +1,7 @@
 import type { FC } from "react";
 
 const About: FC = () => (
-  <div className="my-3 flex flex-col items-start justify-evenly lg:justify-start md:flex-row lg:flex-col">
+  <div className="my-3 flex flex-col items-start justify-evenly md:flex-row lg:flex-col lg:justify-start">
     <div className="flex items-center justify-center">
       <img className="h-16 w-16 lg:h-20 lg:w-20" src="image/white/logo.png" alt="logo" />
       <div className="p-3">
