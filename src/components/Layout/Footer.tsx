@@ -7,7 +7,7 @@ import Sponsor from "~/components/Layout/footer/Sponsor";
 import Privacy from "~/components/Layout/footer/Privacy";
 
 const Footer: FC = () => (
-  <footer className="w-full bg-black p-5 font-montserrat text-white">
+  <footer className="w-full bg-black p-5 pt-8 font-montserrat text-white">
     <div className="flex flex-col-reverse justify-around lg:flex-row">
       <About />
       <div className="items-start justify-evenly md:flex md:flex-row">
