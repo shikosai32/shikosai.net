@@ -8,13 +8,13 @@ const Sponsor: FC = () => (
     <div className="flex flex-col items-center justify-center">
       {sponsorData.map((v) =>
         v.link ? (
-          <p>{v.name}</p>
-        ) : (
           <Link href={v.link ?? ""}>
             <a className="py-1" target="_blank" rel="noopener noreferrer">
               {v.name}
             </a>
           </Link>
+        ) : (
+          <p>{v.name}</p>
         ),
       )}
     </div>
