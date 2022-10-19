@@ -25,7 +25,7 @@ const About: FC = () => (
       <p className="my-3">
         Organized by SHIKOSAI Festival Executive Committee
         <br />
-        Site designed by SHIKOSAI Festival Information Department
+        Site designed by Executive Committee Information Department
       </p>
     </div>
   </div>

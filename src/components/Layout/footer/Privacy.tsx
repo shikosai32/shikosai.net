@@ -7,7 +7,7 @@ const Privacy: FC = () => (
       <a className="my-2 text-center lg:my-0">Privacy Policy</a>
     </Link>
     <span className="mx-2 hidden lg:block">|</span>
-    <p className="text-center">&copy;2022 National Institute of Technology (KOSEN), Ibaraki College</p>
+    <p className="text-center">&copy; 2022 National Institute of Technology (KOSEN), Ibaraki College</p>
   </div>
 );
 
