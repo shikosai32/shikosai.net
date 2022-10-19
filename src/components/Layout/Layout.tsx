@@ -62,10 +62,10 @@ const Layout: FC<LayoutProps> = ({
     </Head>
     <main>
       <Header />
-      <div className="min-h-full pt-20">
+      <div className="min-h-full w-full pt-20">
         <Side>{children}</Side>
+        <Footer />
       </div>
-      <Footer />
     </main>
   </>
 );
