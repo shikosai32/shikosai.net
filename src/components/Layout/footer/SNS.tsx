@@ -4,7 +4,7 @@ import { FaTwitter, FaInstagram } from "react-icons/fa";
 
 const SNS: FC = () => (
   <>
-    <p className="flex items-center	justify-center text-2xl underline underline-offset-1">SNS</p>
+    <p className="text-center text-2xl underline underline-offset-1">SNS</p>
     <Link href="https://www.twitter.com/shikosai32">
       <a className="my-1 flex	items-center justify-center text-lg" target="_blank" rel="noopener noreferrer">
         <FaTwitter className="mr-2" />
