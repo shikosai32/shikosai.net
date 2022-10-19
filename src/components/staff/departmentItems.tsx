@@ -31,12 +31,14 @@ const departmentItems: DepartmentItem[] = [
   {
     id: "器材部",
     department: "器材部",
-    description: "器材部では...",
+    description:
+      "ステージの設営や、ライブの運営を行っています。安全で楽しい茨香祭を行えるように精一杯頑張りますのでよろしくお願いします！",
   },
   {
     id: "デザイン部",
     department: "デザイン部",
-    description: "デザイン部では...",
+    description:
+      "ポスター、チラシ、パンフレットのデザイン＆制作を行いました！パンフレットには、デザイン部の全てが詰まっているので是非注目してみてください！",
   },
   {
     id: "装飾部",
@@ -46,7 +48,7 @@ const departmentItems: DepartmentItem[] = [
   {
     id: "サークル運営部",
     department: "サークル運営部",
-    description: "サークル運営部では...",
+    description: "各サークルの管理や、代表の方と連絡を取り合い運営しています！",
   },
   {
     id: "情報部",
