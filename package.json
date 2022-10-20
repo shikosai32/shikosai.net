@@ -31,7 +31,7 @@
     "react-icons": "4.6.0",
     "react-modal": "3.16.1",
     "react-select": "5.5.2",
-    "react-spring": "9.4.2"
+    "react-spring": "9.5.5"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "12.3.1",
