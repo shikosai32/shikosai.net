@@ -4,7 +4,7 @@ import { OutputType, StatusType, TargetType } from "../type/model";
 
 const nextData = (nowTarget: TargetType): [TargetType, StatusType] => {
   switch (nowTarget) {
-    case "2022-10-21T10:00":
+    case "2022-10-22T10:00":
       return ["2022-10-22T18:00", "first"];
     case "2022-10-22T18:00":
       return ["2022-10-23T9:00", "middle"];
@@ -16,7 +16,7 @@ const nextData = (nowTarget: TargetType): [TargetType, StatusType] => {
 };
 
 const useDiffTime = (): OutputType => {
-  const [targetTime, setTargetTime] = useState<TargetType>("2022-10-21T10:00");
+  const [targetTime, setTargetTime] = useState<TargetType>("2022-10-22T10:00");
   const [status, setStatus] = useState<StatusType>("before");
   const [time, setTime] = useState<number | undefined>(moment("2022-10-22T10:00").diff(moment()));
 
