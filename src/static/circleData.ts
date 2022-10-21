@@ -135,6 +135,16 @@ const circleData: Data = {
         mapImgPath: "/image/circle/map/8.png",
       },
       {
+        circleName: "OZ",
+        orgName: "3I",
+        place: "1号館2階マルチメディア室",
+        circleImgPath: "/image/circle/circle/3I.png",
+        description: "レクリエーションとインターネットの超融合⁉沢山遊んで景品をゲット！",
+        aboutCircle:
+          "プログラミングがメインのクラスです！今回は習った内容を用いたサイトを作ってみました！是非遊びに来てください",
+        mapImgPath: "/image/circle/map/1.png",
+      },
+      {
         circleName: "3C",
         orgName: "3C",
         place: "8号館1階 3C教室",
@@ -142,16 +152,6 @@ const circleData: Data = {
         description: "研究室をテーマとしたお化け屋敷。次に実験体になるのは貴方かも...？",
         aboutCircle: "",
         mapImgPath: "/image/circle/map/8.png",
-      },
-      {
-        circleName: "OZ",
-        orgName: "3I",
-        place: "1号館2階マルチメディア室",
-        circleImgPath: "/image/circle/circle/3I.png",
-        description: "レクリエーションとインターネットの超融合⁉沢山遊んで景品をゲット！",
-        aboutCircle:
-          "プログラミングがメインのクラスです！今回は習った内奥を用いたサイトを作ってみました！是非遊びに来てください",
-        mapImgPath: "/image/circle/map/1.png",
       },
     ],
     [
