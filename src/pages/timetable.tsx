@@ -30,7 +30,7 @@ const TimeTable: NextPage = () => {
 
   return (
     <Layout PageTitle="TimeTable - shikosai32">
-      <div className="flex flex-col items-end justify-evenly pt-10 pb-5 text-center font-roboto-serif md:pb-10 lg:flex-row">
+      <div className="flex flex-col items-end justify-evenly pb-5 text-center font-roboto-serif md:pb-10 lg:flex-row">
         <div className="lg:w-1/3" />
         <img src="/image/black/timetable.png" className="mx-auto mb-4 h-10 md:h-12 lg:h-20" alt="TimeTable" />
         <div className="mx-auto flex items-center justify-center gap-x-4 lg:mx-0 lg:w-1/3">

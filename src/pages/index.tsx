@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center p-10 md:hidden">
+      <div className="flex flex-col items-center justify-center px-10 pb-10 md:hidden">
         <img src="image/logo/logo.jpeg" alt="shikosai" className="w-full" />
         <div className="flex w-[80%] flex-col items-center justify-center border-b-2 border-black pt-5 pb-3 text-3xl">
           <p className="font-bold">
