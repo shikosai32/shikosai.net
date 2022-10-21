@@ -6,7 +6,7 @@ import Flow from "~/components/index/Flow";
 import Caution from "~/components/index/Caution";
 
 const Home: NextPage = () => {
-  const CountDown = dynamic(() => import("~/components/CoundDown"), { ssr: false });
+  const CountDown = dynamic(() => import("~/components/CountDown"), { ssr: false });
 
   return (
     <Layout PageTitle="shikosai32">
