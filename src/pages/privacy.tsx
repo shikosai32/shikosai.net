@@ -3,7 +3,7 @@ import Layout from "~/components/Layout/Layout";
 import styles from "~/styles/privacy.module.scss";
 
 const Privacy: NextPage = () => (
-  <Layout PageTitle="プライバシーポリシー">
+  <Layout PageTitle="Privacy Policy - shikosai.net">
     <div className="relative mx-10 mt-[15vh] md:mx-24 lg:mt-40">
       <h1 className="absolute left-1/2 -top-[2.25rem] -translate-x-1/2 transform bg-white px-4 text-center font-montserrat text-3xl">
         PRIVACY
