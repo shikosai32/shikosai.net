@@ -11,9 +11,15 @@ const Time: FC = () => {
     <div className="mt-2 flex flex-col items-center justify-center font-roboto-serif text-xl font-light md:text-3xl">
       <CreateText status={status} />
       {status !== "finish" && (
-        <span className="mt-2 md:text-4xl">
-          {dura.hours()}Hours | {dura.minutes()}Minutes | {dura.seconds()}Seconds
-        </span>
+        <>
+          <span className="mt-2 hidden md:block md:text-4xl">
+            {dura.hours()}Hours | {dura.minutes()}Minutes | {dura.seconds()}Seconds
+          </span>
+          <span className="mt-2 md:hidden md:text-4xl">{dura.hours()}Hours</span>
+          <span className="md:hidden md:text-4xl">
+            {dura.minutes()}Minutes | {dura.seconds()}Seconds
+          </span>
+        </>
       )}
     </div>
   );
