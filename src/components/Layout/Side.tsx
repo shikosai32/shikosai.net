@@ -106,7 +106,7 @@ const Left: FC = () => <div />;
 const Side: FC<SideProps> = ({ children }) => (
   <>
     <div className="hidden h-full w-full md:flex">
-      <div className="sticky top-20 h-[calc(100vh_-_5rem)] basis-[5.0%] ">
+      <div className="sticky top-20 h-[calc(100vh_-_5rem)] basis-[5%] ">
         <Left />
       </div>
       <div className="basis-[90.0%]">{children}</div>
@@ -114,7 +114,7 @@ const Side: FC<SideProps> = ({ children }) => (
         <Right />
       </div>
     </div>
-    <div className=" h-full w-full md:hidden">{children}</div>
+    <div className="h-full w-full md:hidden">{children}</div>
   </>
 );
 
