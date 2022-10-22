@@ -7,8 +7,8 @@ const nextData = (nowTarget: TargetType): [TargetType, StatusType] => {
     case "2022-10-22T10:00":
       return ["2022-10-22T18:00", "first"];
     case "2022-10-22T18:00":
-      return ["2022-10-23T9:00", "middle"];
-    case "2022-10-23T9:00":
+      return ["2022-10-23T09:00", "middle"];
+    case "2022-10-23T09:00":
       return ["2022-10-23T14:00", "second"];
     default:
       return ["finish", "finish"];

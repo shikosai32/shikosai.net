@@ -1,4 +1,4 @@
-export type TargetType = "2022-10-22T10:00" | "2022-10-22T18:00" | "2022-10-23T9:00" | "2022-10-23T14:00" | "finish";
+export type TargetType = "2022-10-22T10:00" | "2022-10-22T18:00" | "2022-10-23T09:00" | "2022-10-23T14:00" | "finish";
 
 export type StatusType = "before" | "first" | "middle" | "second" | "finish";
 
