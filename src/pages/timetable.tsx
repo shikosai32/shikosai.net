@@ -38,7 +38,7 @@ const TimeTable: NextPage = () => {
           <select
             className="rounded-2xl bg-black p-2 pl-3 text-white md:text-lg lg:text-3xl"
             onChange={(e) => setDay(e.target.value)}
-            defaultValue="1"
+            defaultValue="2"
           >
             <option value="1" label="10/22(Sat.)">
               10/22(Sat.)
