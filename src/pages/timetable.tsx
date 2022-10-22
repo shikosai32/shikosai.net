@@ -6,7 +6,7 @@ import timetableData from "~/static/timetableData";
 
 const TimeTable: NextPage = () => {
   const [stage, setStage] = useState<string>("out");
-  const [day, setDay] = useState<string>("1");
+  const [day, setDay] = useState<string>("2");
   const [data, setData] = useState<typeof timetableData.day1>(timetableData.day1);
   const [mobileData, setMobileData] = useState<typeof timetableData.day1.out>(timetableData.day1.out);
 
