@@ -6,7 +6,7 @@ import timetableData from "~/static/timetableData";
 
 const TimeTable: NextPage = () => {
   const [stage, setStage] = useState<string>("out");
-  const [day, setDay] = useState<string>("1");
+  const [day, setDay] = useState<string>("2");
   const [data, setData] = useState<typeof timetableData.day1>(timetableData.day1);
   const [mobileData, setMobileData] = useState<typeof timetableData.day1.out>(timetableData.day1.out);
 
@@ -38,7 +38,7 @@ const TimeTable: NextPage = () => {
           <select
             className="rounded-2xl bg-black p-2 pl-3 text-white md:text-lg lg:text-3xl"
             onChange={(e) => setDay(e.target.value)}
-            defaultValue="1"
+            defaultValue="2"
           >
             <option value="1" label="10/22(Sat.)">
               10/22(Sat.)
