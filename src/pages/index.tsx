@@ -21,7 +21,16 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="w-full">
-            <CountDown />
+            <p className="my-5 text-center font-roboto-serif text-4xl">
+              第32回茨香祭は終了しました！
+              <br />
+              ご来場ありがとうございました！
+            </p>
+            <p className="text-center font-roboto-serif text-2xl">
+              The Event Has Ended.
+              <br />
+              Thank You For Your Participation!
+            </p>
           </div>
         </div>
       </div>
@@ -47,17 +56,17 @@ const Home: NextPage = () => {
           </p>
         </div>
         <div className="w-full pt-2">
-          <CountDown />
+          <p className="my-5 text-center font-roboto-serif text-xl">
+            第32回茨香祭は終了しました！
+            <br />
+            ご来場ありがとうございました！
+          </p>
+          <p className="text-center font-roboto-serif text-lg">
+            The Event Has Ended.
+            <br />
+            Thank You For Your Participation!
+          </p>
         </div>
-      </div>
-      <div className="md:mt-20">
-        <Info />
-      </div>
-      <div className="mt-24 hidden w-full md:block">
-        <Flow />
-      </div>
-      <div className="mt-10 mb-6 w-full md:mt-24">
-        <Caution />
       </div>
     </Layout>
   );
