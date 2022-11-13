@@ -48,7 +48,7 @@
     "@typescript-eslint/eslint-plugin": "5.42.1",
     "@typescript-eslint/parser": "5.42.1",
     "autoprefixer": "10.4.13",
-    "css-loader": "6.7.1",
+    "css-loader": "6.7.2",
     "eslint": "8.27.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-typescript": "17.0.0",
