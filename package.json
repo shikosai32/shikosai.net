@@ -60,7 +60,7 @@
     "postcss": "8.4.19",
     "prettier": "2.8.1",
     "prettier-plugin-tailwindcss": "0.2.1",
-    "sass": "1.56.1",
+    "sass": "1.56.2",
     "sass-loader": "13.2.0",
     "storybook": "6.5.14",
     "storybook-addon-next-router": "4.0.1",
