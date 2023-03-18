@@ -61,7 +61,7 @@
     "prettier": "2.8.4",
     "prettier-plugin-tailwindcss": "0.2.5",
     "sass": "1.59.3",
-    "sass-loader": "13.2.0",
+    "sass-loader": "13.2.1",
     "storybook": "6.5.16",
     "storybook-addon-next-router": "4.0.2",
     "style-loader": "3.3.2",
