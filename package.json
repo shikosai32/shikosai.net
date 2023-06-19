@@ -44,7 +44,7 @@
     "@storybook/preset-scss": "1.0.3",
     "@storybook/react": "6.5.16",
     "@types/node": "17.0.14",
-    "@types/react": "18.2.12",
+    "@types/react": "18.2.13",
     "@typescript-eslint/eslint-plugin": "5.59.11",
     "@typescript-eslint/parser": "5.59.11",
     "autoprefixer": "10.4.14",
