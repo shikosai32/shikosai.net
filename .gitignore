@@ -3,7 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
-.pnp.js
+.pnp.*js
 
 # testing
 /coverage
@@ -44,3 +44,7 @@ prepare-commit-msg
 
 # storybook
 storybook-static/
+
+# yarn
+.yarn/*
+!.yarn/releases

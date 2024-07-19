@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "eslint --ignore-path .gitignore src/**/*.{ts,tsx}",
     "lint:fix": "eslint --ignore-path .gitignore src/**/*.{ts,tsx} --fix",
@@ -20,7 +21,12 @@
     ]
   },
   "engines": {
+    "node": "18.20.4",
     "npm": "Please use yarn instead"
+  },
+  "packageManager": "yarn@4.3.1",
+  "volta": {
+    "node": "18.20.4"
   },
   "dependencies": {
     "hamburger-react": "2.5.0",
