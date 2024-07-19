@@ -4166,14 +4166,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.17":
-  version: 18.2.17
-  resolution: "@types/react@npm:18.2.17"
+"@types/react@npm:18.3.3":
+  version: 18.3.3
+  resolution: "@types/react@npm:18.3.3"
   dependencies:
     "@types/prop-types": "npm:*"
-    "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10/13a74aebf0a7224ab3e1557aa6cfa5b93d6e11bb94f55d9ca88bd6873cd93e54c7cfcb3b495a777e987a7f8a59dc714860ae5cb5fd832ee8d9bde7e9a0b52b7e
+  checksum: 10/68e203b7f1f91d6cf21f33fc7af9d6d228035a26c83f514981e54aa3da695d0ec6af10c277c6336de1dd76c4adbe9563f3a21f80c4462000f41e5f370b46e96c
   languageName: node
   linkType: hard
 
@@ -15126,7 +15125,7 @@ __metadata:
     "@storybook/preset-scss": "npm:1.0.3"
     "@storybook/react": "npm:6.5.16"
     "@types/node": "npm:17.0.45"
-    "@types/react": "npm:18.2.17"
+    "@types/react": "npm:18.3.3"
     "@typescript-eslint/eslint-plugin": "npm:5.62.0"
     "@typescript-eslint/parser": "npm:5.62.0"
     autoprefixer: "npm:10.4.14"
